@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/camera.js"></script>
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+$(window).load(function() { 
+     $('#tab_preview a').click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+    })	 				
+  });
+</script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow.js"></script>
+<script src="js/device.min.js"></script>
+<script src="js/jquery.mobile.customized.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <div id="ie6-alert" style="display:none;">
+    <img src="images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.useso.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+<body>
+<!--header-->
+<div class="main">
+    <header class="indent">
+        <div class="container">
+            <h1 class="navbar-brand navbar-brand_ wow fadeInDown" data-wow-delay="0.2s"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <div class="box clearfix">
+            <div class="bdsharebuttonbox" style="float:right;"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<br><br><br><br>
+                <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+                    <ul class="nav sf-menu clearfix">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="sub-menu"><a href="index-1.html">About</a><span></span>
+                            <ul class="submenu">
+                				<li><a href="#">History</a></li>
+                				<li><a href="#">Gallery</a><span class="fa fa-angle-right"></span>
+                                    <ul class="submenu">
+                                        <li><a href="#">Lorem</a></li>
+                                        <li><a href="#">Dolor</a></li>
+                                    </ul> 
+                                </li>
+                				<li><a href="#">Events</a></li>
+                			</ul>
+                        </li>
+                        <li><a href="index-2.html">Menu</a></li>
+                        <li><a href="index-3.html">News</a></li>
+                        <li><a href="index-4.html">Contacts</a></li>
+                    </ul>
+                </nav><br>
+            </div>
+        </div>
+    </header>
+    <div class="slider">  
+        <div class="camera_wrap">
+            <div data-src="images/picture1.jpg"></div>
+            <div data-src="images/picture2.jpg"></div>
+            <div data-src="images/picture3.jpg"></div>
+        </div>
+    </div>
+</div>
+<!--content-->
+<div class="content"> 
+    <div class="thumb-box1">
+        <div class="container">
+            <h2 class="indent wow fadeInDown">Welcome to our website!<span>Sutem vel eum iriure dolor in hendrerit in</span></h2>
+            <ul class="nav nav-tabs wow fadeInUp" id="tab_preview">
+            	<li class="active"><a href="#div_1">History</a></li>
+                <li><a href="#div_2">About Us</a></li>
+                <li><a href="#div_3">Our clients</a></li>
+            </ul>
+            <div class="row">
+                <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="tab-content"> 
+                        <div class="tab-pane active" id="div_1">
+                            <p>Dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzril delenit augue duis dolore te feugait nulla facn habent claritatem insitam; est usus legentis in iis qui facit eorum clarivestigationes demonstraverunt lectores legere  eorum clarita eros et accumss quod ii leg. </p>
+                        </div>
+                        <div class="tab-pane" id="div_2">
+                            <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+                        </div>
+                        <div class="tab-pane" id="div_3">
+                            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus. Et harum quidem rerum facilis est et expedita.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stellar-section">
+        <div class="thumb-box2" data-stellar-background-ratio="-0.2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <a href="#" class="box1">
+                            <i><img src="images/page1_icon1.png" alt=""></i>
+                            <strong>Tasty food</strong>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInLeft">
+                        <a href="#" class="box2">
+                            <i><img src="images/page1_icon2.png" alt=""></i>
+                            <strong>Different drinks</strong>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInRight">
+                        <a href="#" class="box3">
+                            <i><img src="images/page1_icon3.png" alt=""></i>
+                            <strong>Games</strong>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <a href="#" class="box4">
+                            <i><img src="images/page1_icon4.png" alt=""></i>
+                            <strong>Music concerts</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box3">
+        <div class="container">
+            <h2 class="wow fadeInDown">Our menu<span>Sutem vel eum iriure dolor in hendrerit in</span></h2>
+            <div class="thumb-pad1 wow fadeInUp">
+                <div class="thumbnail">
+                    <figure><img src="images/page1_pic1.jpg" alt=""></figure>
+                    <div class="caption">
+                        <a href="#">Duis autem vel eum iriure</a>
+                        <time datetime="2014-01-01"><i></i>15 min</time>
+                        <p>Dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facil</p>
+                        <p class="price">$8</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="thumb-pad1 wow fadeInUp">
+                <div class="thumbnail">
+                    <figure class="pull-right"><img src="images/page1_pic2.jpg" alt=""></figure>
+                    <div class="caption pull-left">
+                        <a href="#">Claritas est etiam proc</a>
+                        <time datetime="2014-01-01"><i></i>21 min</time>
+                        <p>Typi non habent claritatem insitam; est usus legentis in iis  hendrerit in vulputate velit esse molestie consequat</p>
+                        <p class="price">$5</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="thumb-pad1 wow fadeInUp">
+                <div class="thumbnail">
+                    <figure><img src="images/page1_pic3.jpg" alt=""></figure>
+                    <div class="caption">
+                        <a href="#">Eodem modo typ</a>
+                        <time datetime="2014-01-01"><i></i>25 min</time>
+                        <p>Fdrerit in vulputate velit esse molestie consequat, vel illum  habent claritatem insitam; est usus legentis in iis facil</p>
+                        <p class="price">$13</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="thumb-pad1 wow fadeInUp">
+                <div class="thumbnail">
+                    <figure class="pull-right"><img src="images/page1_pic4.jpg" alt=""></figure>
+                    <div class="caption pull-left">
+                        <a href="#">Vinim veniam, quis nostrude</a>
+                        <time datetime="2014-01-01"><i></i>15 min</time>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis</p>
+                        <p class="price">$4</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn-default btn1 wow fadeInUp">all menu</a>
+    </div>
+    <div class="thumb-box4">
+        <div class="container">
+            <h2 class="wow fadeInUp">news<span>Sutem vel eum iriure dolor in hendrerit in</span></h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 wow fadeInUp">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><div class="caption"><time datetime="2014-01-01">21/09</time><p>Dolor in hendrerit in vulputate velit esse molestie cons</p></div><img src="images/page1_pic5.jpg" alt=""></figure> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><div class="caption"><time datetime="2014-01-01">13/10</time><p>Re in vulputate velit esse molestie cons equat, vel illum dolore eu</p></div><img src="images/page1_pic6.jpg" alt=""></figure> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><div class="caption"><time datetime="2014-01-01">17/10</time><p>Cen hendrerit in vulputate velit esse molestie wer</p></div><img src="images/page1_pic7.jpg" alt=""></figure> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="stellar-section">
+    <footer data-stellar-background-ratio="-0.2"> 
+        <div class="container">
+            <figure class="wow fadeInDown"><img src="images/logo.png" alt=""></figure>
+            <p class="wow fadeInUp">Copyright &copy; <em id="copyright-year"></em> | <a href="index-5.html">Privacy Policy</a></p>
+        </div>
+      <!-- {%FOOTER_LINK} -->
+    </footer>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script type="text/javascript"></script>
+<script type="text/javascript" src="../../include.js"></script></body>
+</html>
