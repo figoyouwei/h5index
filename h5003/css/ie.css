@@ -1,0 +1,30 @@
+a[data-gal] .overlay-gallery{
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#002B2B28,endColorstr=#002B2B28);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#002B2B28,endColorstr=#002B2B28);
+    zoom: 1;
+}
+
+a[data-gal]:hover .overlay-gallery{
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#662B2B28,endColorstr=#662B2B28);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#662B2B28,endColorstr=#662B2B28);
+    zoom: 1;
+}
+
+.divider{
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33E1E1E1,endColorstr=#33E1E1E1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33E1E1E1,endColorstr=#33E1E1E1);
+    zoom: 1;
+}
+
+#content .br-1:before{
+    background:none;
+    background: #4a4c45;
+}
+
+.camera_caption p{
+    font-size: 28px;
+}
+

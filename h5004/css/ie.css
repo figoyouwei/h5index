@@ -1,0 +1,37 @@
+.block-stellar_image img { behavior:url(../images/PIE.htc); position:relative;}
+.socials_wrapper a { behavior:url(../images/PIE.htc); position:relative;}
+#toTop { behavior:url(../images/PIE.htc); position:fixed;}
+
+.block-stellar {
+  background-attachment: fixed;
+  background-position: center 100%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+
+/* Contact Form Processing Box
+========================================================*/
+#contact-form .contact-form-loader { 
+  display: none;
+}
+#contact-form.processing .contact-form-loader {
+  display: block;
+}
+
+.inner .item a .fa {
+	display: none !important	;
+}
+
+.inner .item a:hover .fa {
+	display: block !important;
+}
+
+.inner .item a .magnifier-overlay {
+	display: none !important	;
+}
+
+.inner .item a:hover .magnifier-overlay {
+	display: block !important;
+}
+

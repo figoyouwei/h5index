@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name = "format-detection" content = "telephone=no" />
+
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link href="css/css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script> 
+
+  <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="js/TMForm.js"></script>
+
+  <script src="js/js"></script>
+
+  <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      $(document).ready(function () {       
+        if ($('html').hasClass('desktop')) {
+          new WOW().init();
+        }   
+      });
+    </script>
+  <!--<![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+
+<body class="sub-page">
+  <!--========================================================
+                            HEADER 
+  =========================================================-->
+  <header id="header">
+    <section>
+      <div class="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="grid_12">
+              <nav>
+                <ul class="sf-menu">
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="index-1.html">services</a>
+                    <ul>
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Nulla dui</a>
+                        <ul>
+                          <li><a href="#">Morbi</a></li>
+                          <li><a href="#">Cum sociis</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Aenean</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="index-2.html">prices</a></li>
+                  <li><a href="index-3.html">reservation</a></li>
+                  <li class="current"><a href="index-4.html">contacts</a></li>
+               </ul>
+              </nav> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="header_top">
+        <h1><a href="index.html">Barber<br><span class="lower">Shop</span></a></h1>
+      </article>
+    </section>
+  </header>
+
+  <!--========================================================
+                            CONTENT 
+  =========================================================-->
+  <section class="content_map content_map__higher">
+    <div class="useso-map-api"> 
+      <div id="map-canvas" class="gmap">
+      	<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
+      </div> 
+    </div>
+  </section>
+
+  <section id="content">
+
+  <article class="content_inset__3">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <h2 class="heading heading__decoration1 wow fadeInRight">contacts</h2>
+        </div>
+        <div class="grid_6">
+          <div class="text9">contact info</div>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sus- cipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.</p>
+          <address class="text10 wow fadeInRight">
+            <div><div class="fa fa-mobile"></div><span class="color1">Phone:</span> +1 800 559 6580</div>
+            <div><div class="fa fa-envelope-o"></div><span class="color1">E-mail:</span> <a href="mailto:mail@demolink.org">mail@demolink.org</a></div>
+            <div><div class="fa fa-flag"></div><span class="color1">Website:</span> <a href="#">www.demolink.com</a></div>
+            <div><div class="fa fa-home"></div><span class="color1">Address:</span> 8901 Marmora Road, Glasgow, D04 89GR.</div>
+          </address>
+        </div>
+        <div class="grid_6">
+          <form id="contact-form">
+            <div class="contact-form-loader"></div>
+            <fieldset>
+              <label class="name">
+                <input type="text" name="name" placeholder="Name" value="" data-constraints="@Required @JustLetters">
+                <span class="empty-message">*This field is required.</span>
+                <span class="error-message">*This is not a valid name.</span>
+              </label>
+              <label class="email">
+                <input type="text" name="email" placeholder="Email" value="" data-constraints="@Required @Email">
+                <span class="empty-message">*This field is required.</span>
+                <span class="error-message">*This is not a valid email.</span>
+              </label>
+              <label class="phone">
+                <input type="text" name="phone" placeholder="Phone" value="" data-constraints="@Required @JustNumbers">
+                <span class="empty-message">*This field is required.</span>
+                <span class="error-message">*This is not a valid phone.</span>
+              </label>
+              <label class="message">
+                <textarea name="message" placeholder="Message" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                <span class="empty-message">*This field is required.</span>
+                <span class="error-message">*The message is too short.</span>
+              </label>
+              <div class="clearfix"></div>
+              <div class="ta__r">
+                <a href="#" class="btn" data-type="submit">send message</a>
+              </div>
+            </fieldset>
+            <div class="modal fade response-message">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    You message has been sent! We will be in touch soon.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form> 
+        </div> 
+      </div>       
+    </div>
+  </article>
+
+
+  </section>
+
+
+
+  <!--========================================================
+                            FOOTER 
+  =========================================================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <p class="footer_description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+          <div class="socials">
+            <div class="socials_wrapper">
+              <a class="fa fa-facebook" href="#"></a>
+              <a class="fa fa-twitter" href="#"></a>
+              <a class="fa fa-useso-plus" href="#"></a>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="footer_privacy">Barber Shop © <span id="copyright-year"></span>. <a href="index-5.html">Privacy Policy</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+<script type="text/javascript" src="../../include.js"></script></body>
+</html>

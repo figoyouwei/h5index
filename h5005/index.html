@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/camera.js"></script> 
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script src="js/touchTouch.jquery.js"></script> 
+<script src='js/js'></script>
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/sForm.js"></script>
+
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+   $(window).load(function() {
+     // Initialize the gallery
+    $('.thumb-box4 figure a').touchTouch();
+  });
+</script>
+<script>
+	$(window).load(function() {
+		$(function() {
+            $('.foo1').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '.prev1',
+				next: '.next1',
+				items: {
+					height: 'auto',
+					width:200,
+					visible: {
+						min: 1,
+						max: 6
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+            $('#foo2').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                pagination  : "#foo2_pag",
+				items: {
+					height: 'auto',
+					width:300,
+					visible: {
+						min: 1,
+						max: 1
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+		}); 	 				
+    });
+</script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow.js"></script>
+<script src="js/device.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.useso.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+<body>
+<!--header-->
+<header class="clearfix">
+    <div class="container">
+        <h1 class="navbar-brand navbar-brand_ wow fadeInDown"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+        <div class="container">
+            <ul class="nav sf-menu clearfix">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="sub-menu"><a href="index-1.html">About</a><span></span>
+                    <ul class="submenu">
+        				<li><a href="#">history</a></li>
+        				<li><a href="#">news</a><span class="fa fa-angle-right"></span>
+                            <ul class="submenu">
+                                <li><a href="#">latest</a></li>
+                                <li><a href="#">archive</a></li>
+                              </ul> 
+                        </li>
+        				<li><a href="#">testimonials</a></li>
+        			</ul>
+                </li>
+                <li><a href="index-2.html">membership</a></li>
+                <li><a href="index-3.html">gallery</a></li>
+                <li><a href="index-4.html">Contacts</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+</header>
+<div class="slider">  
+    <div class="camera_wrap">
+        <div data-src="images/picture1.jpg"><div class="camera-caption fadeIn"><p class="title">United by the hobby<br>of model aircraft flying</p></div></div>
+        <div data-src="images/picture2.jpg"><div class="camera-caption fadeIn"><p class="title">Promoting the safe<br>radio model flying</p></div></div>
+        <div data-src="images/picture3.jpg"><div class="camera-caption fadeIn"><p class="title">Sharing the experience<br>of the best pastime</p></div></div>
+    </div>
+</div>
+<!--content-->
+<div class="content"> 
+    <div class="thumb-box1">
+        <div class="container">
+            <p class="title wow fadeIn">Dedicated to the sport of model aviation</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 maxheight wow fadeInUp">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_icon1.png" alt=""></figure>
+                            <div class="caption">
+                                <strong>Flying<br>Times</strong>
+                            </div>  
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                        <a href="#" class="btn-default btn1">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 maxheight wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_icon2.png" alt=""></figure>
+                            <div class="caption">
+                                <strong>Members<br>Area</strong>
+                            </div>  
+                        </div>
+                        <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris.nisi ut aliquip ex ea.</p>
+                        <a href="#" class="btn-default btn1">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 maxheight wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_icon3.png" alt=""></figure>
+                            <div class="caption">
+                                <strong>Meeting<br>Venue</strong>
+                            </div>  
+                        </div>
+                        <p>Massa ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="btn-default btn1">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 maxheight info-box wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="title">call us:<br><span>+1 800 559 6580<br>+1 800 589 4325</span></p>
+                    <p class="title"><i>email:</i><br><a href="#">contact@demolink.org</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box2">
+        <div class="container">
+            <p class="title wow fadeIn">Enjoy The Thrill Of Flying!</p>
+            <p class="description wow fadeIn">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas <br>assumenda est, omnis dolor repellendus.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic1.jpg" alt=""></figure>
+                            <div class="caption">
+                                <strong>Quis autem vel</strong>
+                                <i>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit sed do.</i>
+                                <p>Molestias excepturi sint occaecati cupificia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis... Nam libero tempore, cum soluta nobis est eligendi...</p>
+                                <a href="#" class="btn-default btn2">more</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic2.jpg" alt=""></figure>
+                            <div class="caption">
+                                <strong>Et harum quidem</strong>
+                                <i>Massa ipsum dolor sit amet consectetur <br>eiusmod tempor incididunt.</i>
+                                <p>Dos dolores et quas molestias excepturi sint occaecati cupificia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum                                                      est et expedita distinctio... </p>
+                                <a href="#" class="btn-default btn2">more</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic3.jpg" alt=""></figure>
+                            <div class="caption">
+                                <strong>alias consequatur</strong>
+                                <i>Dolor sit amet consectetur <br>eiusmod tempor incididunt ut labore.</i>
+                                <p>Sorrupti quos dolores et quas molestias excepturi sint occaecati cupificia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis... </p>
+                                <a href="#" class="btn-default btn2">more</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box3">
+        <div class="container">
+            <p class="title wow fadein"><span>Quick Links</span></p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                    <div class="thumb-pad3">
+                        <div class="thumbnail">
+                            <strong class="fa fa-star"></strong>
+                            <div class="caption">
+                                <p class="description">odio dignissimos ducimus </p>
+                                <ul class="list1">
+                                    <li><a href="#">At vero eos et accusamus et iusto</a></li>
+                                    <li><a href="#">odio dignissimos ducimus qui</a></li>
+                                    <li><a href="#">blanditiis praesentium volutum</a></li>
+                                    <li><a href="#">deleniti atque</a></li>
+                                    <li><a href="#">corrupti quos dolores et</a></li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="thumb-pad3">
+                        <div class="thumbnail">
+                            <strong class="fa fa-star"></strong>
+                            <div class="caption">
+                                <p class="description">Temporibus autem</p>
+                                <ul class="list1">
+                                    <li><a href="#">Eero eos et accusamus et iusto</a></li>
+                                    <li><a href="#">odio dignissimos ducimus qui</a></li>
+                                    <li><a href="#">blanditiis praesentium volup</a></li>
+                                    <li><a href="#">tatum deleniti atque</a></li>
+                                    <li><a href="#">corrupti quos dolores et</a></li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="thumb-pad3">
+                        <div class="thumbnail">
+                            <strong class="fa fa-star"></strong>
+                            <div class="caption">
+                                <p class="description">officiis debitis aut</p>
+                                <ul class="list1">
+                                    <li><a href="#">uos dolores et quas molestias</a></li>
+                                    <li><a href="#">excepturi sint occaecati cupiditate</a></li>
+                                    <li><a href="#">nonnsimilique sunt in culpa qui </a></li>
+                                    <li><a href="#">officia deserunt molli id est</a></li>
+                                    <li><a href="#">laborum et dolorum fuga</a></li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box4">
+        <div class="container">
+            <p class="title wow fadeIn"><span>our gallery</span></p>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <figure class="wow zoomIn"><a href="images/img6.jpg"><i></i><span></span><img src="images/page1_pic4.jpg" alt=""></a></figure>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <figure class="wow zoomIn" data-wow-delay="0.1s"><a href="images/img7.jpg"><i></i><span></span><img src="images/page1_pic5.jpg" alt=""></a></figure>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <figure class="wow zoomIn" data-wow-delay="0.2s"><a href="images/img5.jpg"><i></i><span></span><img src="images/page1_pic6.jpg" alt=""></a></figure>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <figure class="wow zoomIn" data-wow-delay="0.3s"><a href="images/img8.jpg"><i></i><span></span><img src="images/page1_pic7.jpg" alt=""></a></figure>
+                </div>
+            </div>
+            <a href="#" class="btn-default btn3 wow fadeInUp" data-wow-delay="0.1s">View All</a>
+            <a href="#" class="btn-default btn3 wow fadeInUp">Download</a>
+        </div>
+    </div>
+    <div class="thumb-box5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <p class="wow fadeInLeft"><img src="images/page1_icon4.png" alt="">View our events calendar</p>
+                </div>
+                <div class="col-lg-3 center">
+                    <p class="time wow fadeInRight" data-wow-delay="0.1s"><strong>2014</strong> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+        <em></em>
+    </div>
+    <div class="thumb-box6">
+        <div class="container">
+            <div class="list_carousel1 responsive clearfix wow fadeInUp">
+                <ul class="foo foo1">
+                    <li><a href="#"><img src="images/page1_company1.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/page1_company2.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/page1_company3.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/page1_company4.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/page1_company5.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/page1_company6.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/page1_company3.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="list_btn2 wow fadeInUp">
+                <a class="prev prev1" href="#"></a>
+                <a class="next next1" href="#"></a>
+            </div>
+        </div>
+     </div>
+    <section class="content_map">
+          <div class="useso-map-api"> 
+            <div id="map-canvas" class="gmap">
+            	<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
+            </div> 
+          </div> 
+    </section>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <p class="title">copyright</p>
+                <p class="prev">&copy; <em id="copyright-year"></em> | <a href="index-5.html">Privacy Policy</a></p>
+                <ul class="follow_icon2">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-useso-plus"></a></li>
+                    <li><a href="#" class="fa fa-rss"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="title2">our location</p>
+                <div class="foo_info">
+                    <p>9870 St Vincent Place,<br>Glasgow, DC 45 Fr 45.<br>Freephone: +1 800 559 6580<br>Telephone:  +1 800 603 6035<br>FAX: +1 800 889 9898</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                <p class="title2">newsletter</p>
+                <form id="newsletter" accept-charset="utf-8">
+        			<div class="success">Your subscribe request has been sent!</div>
+                    <label class="email">
+        		    	<input type="email" value="">
+        		    	<span class="error">*This is not a valid email address.</span>
+        		    </label>
+                    <a href="#" data-type="submit">ok</a>
+        		</form>
+            </div>
+        </div>
+    </div>
+  <!-- {%FOOTER_LINK} -->
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script type="text/javascript" src="../../include.js"></script>
+</body>
+</html>
