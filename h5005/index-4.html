@@ -60,22 +60,23 @@
     <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
         <div class="container">
             <ul class="nav sf-menu clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li class="sub-menu"><a href="index-1.html">About</a><span></span>
+                <li><a href="index.html">首页</a></li>
+                <li class="sub-menu"><a href="index-1.html">关于我们</a><span></span>
                     <ul class="submenu">
-        				<li><a href="#">history</a></li>
-        				<li><a href="#">news</a><span class="fa fa-angle-right"></span>
+                        <li><a href="#">研发团队</a></li>
+                        <li><a href="#">技术团队</a><span class="fa fa-angle-right"></span>
                             <ul class="submenu">
-                                <li><a href="#">latest</a></li>
-                                <li><a href="#">archive</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">AngularJS</a></li>
+                                <li><a href="#">Mathematica</a></li>
                               </ul> 
                         </li>
-        				<li><a href="#">testimonials</a></li>
-        			</ul>
+                        <li><a href="#">研发团队</a></li>
+                    </ul>
                 </li>
-                <li><a href="index-2.html">membership</a></li>
-                <li><a href="index-3.html">gallery</a></li>
-                <li class="active"><a href="index-4.html">Contacts</a></li>
+                <li><a href="index-2.html">云服务</a></li>
+                <li><a href="index-3.html">精品系列</a></li>
+                <li class="active"><a href="index-4.html">联系我们</a></li>
             </ul>
             
         </div>
@@ -93,49 +94,49 @@
             </section>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h2 class="wow fadeInUp">Addresses</h2>
+                    <h2 class="wow fadeInUp">联系方式</h2>
                     <div class="info">
-                        <h3>address 1:</h3>
-                        <p>The Company Name Inc.<br>8901 Marmora Road, Glasgow, D04 89GR.</p>
-                        <h3>Telephones:</h3>
-                        <p>+1 800 559 6580<br>+1 800 603 6035</p>
-                        <h3>address 2:</h3>
-                        <p>The Company Name Inc.<br>9863 - 9867 Mill Road, Cambridge, MG09 99HT. </p>
+                        <h3>公司地址:</h3>
+                        <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
+                        <h3>联系电话:</h3>
+                        <p>400-007-1818<br>+1 800 603 6035</p>
+                        <h3>公司地址:</h3>
+                        <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8">
-                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">Contact form</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.1s">客户留言</h2>
                     <form id="contact-form">
                           <div class="contact-form-loader"></div>
                           <fieldset>
                             <label class="name form-div-1">
-                                <strong>Name*</strong>
+                                <strong>姓名*</strong>
                               <input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters"  />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid name.</span>
+                              <span class="empty-message">*必填项目</span>
+                              <span class="error-message">*输入错误，请再次输入</span>
                             </label>
                             <label class="email form-div-2">
-                                <strong>E-mail*</strong>
+                                <strong>电子邮箱*</strong>
                               <input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid email.</span>
+                              <span class="empty-message">*必填项目</span>
+                              <span class="error-message">*邮箱不可用，请重新输入</span>
                             </label>
                             <label class="phone form-div-3">
-                                <strong>Phone</strong>
+                                <strong>电话*</strong>
                               <input type="text" name="phone" placeholder="" value="" data-constraints="@JustNumbers" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid phone.</span>
+                              <span class="empty-message">*必填项目</span>
+                              <span class="error-message">*电话输入错误，请再次输入</span>
                             </label>
                             <label class="message form-div-4">
-                                <strong>Message*</strong>
+                                <strong>留言*</strong>
                               <textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*The message is too short.</span>
+                              <span class="empty-message">*必填项目</span>
+                              <span class="error-message">*亲爱的用户，再说点什么吧......</span>
                             </label>
                             <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
                             <div class="btns">
-                                <a href="#" data-type="submit" class="btn-default btn2">submit</a>
-                                <p>* required fields</p>
+                                <a href="#" data-type="submit" class="btn-default btn2">提交</a>
+                                <p>* 必填项目</p>
                             </div>
                           </fieldset> 
                           <div class="modal fade response-message">
@@ -162,8 +163,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
-                <p class="title">copyright</p>
-                <p class="prev">&copy; <em id="copyright-year"></em> | <a href="index-5.html">Privacy Policy</a></p>
+                <p class="title">版权所有</p>
+                <p class="prev">&copy; <em id="copyright-year"></em> |云服务商： <a href="index-5.html">智能云</a></p>
                 <ul class="follow_icon2">
                     <li><a href="#" class="fa fa-facebook"></a></li>
                     <li><a href="#" class="fa fa-useso-plus"></a></li>
@@ -173,20 +174,20 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="title2">our location</p>
+                <p class="title2">联系我们</p>
                 <div class="foo_info">
-                    <p>9870 St Vincent Place,<br>Glasgow, DC 45 Fr 45.<br>Freephone: +1 800 559 6580<br>Telephone:  +1 800 603 6035<br>FAX: +1 800 889 9898</p>
+                    <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>咨询热线:400-007-1818<br>联系电话:  +1 800 603 6035<br>传真: 400-007-1818</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
-                <p class="title2">newsletter</p>
+                <p class="title2">快速查找</p>
                 <form id="newsletter" accept-charset="utf-8">
         			<div class="success">Your subscribe request has been sent!</div>
                     <label class="email">
         		    	<input type="email" value="">
-        		    	<span class="error">*This is not a valid email address.</span>
+        		    	<span class="error">*输入有误，请再次输入</span>
         		    </label>
-                    <a href="#" data-type="submit">ok</a>
+                    <a href="#" data-type="submit">搜索</a>
         		</form>
             </div>
         </div>
