@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>gallery</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script> 
+<script src="js/jquery.isotope.min.js"></script>
+<script>
+   $(window).load(function() {
+     // Initialize the gallery
+    $('.element figure a').touchTouch();
+  });
+</script>
+<script>	
+    $(window).load( function(){	
+        
+        //isotope
+        var $container = $('#container');
+            //Run to initialise column sizes
+            updateSize();
+        
+            //Load masonry when images all loaded
+            $container.imagesLoaded( function(){
+        
+                $container.isotope({
+                    // options
+                    itemSelector : '.element',	
+                    layoutMode : 'masonry',
+                    transformsEnabled: true,
+                    columnWidth: function( containerWidth ) {
+                        containerWidth = $browserWidth;
+                        return Math.floor(containerWidth / $cols);
+                      }
+                });
+            });
+            
+        	    // update columnWidth on window resize
+            $(window).smartresize(function(){  
+                updateSize();
+                $container.isotope( 'reLayout' );
+            });
+        	
+            //Set item size
+            function updateSize() {
+                $browserWidth = $container.width();
+                $cols = 3;
+        
+                if ($browserWidth >= 1170) {
+                    $cols = 3;
+                }
+                else if ($browserWidth >= 767 && $browserWidth < 1170) {
+                    $cols = 3;
+                }
+                else if ($browserWidth >= 480 && $browserWidth < 767) {
+                    $cols = 2;
+                }
+                else if ($browserWidth >= 220 && $browserWidth < 480) {
+                    $cols = 1;
+                }
+                //console.log("Browser width is:" + $browserWidth);
+                //console.log("Cols is:" + $cols);
+        
+                // $gutterTotal = $cols * 20;
+        		$browserWidth = $browserWidth; // - $gutterTotal;
+                $itemWidth = $browserWidth / $cols;
+                $itemWidth = Math.floor($itemWidth);
+        
+                $(".element").each(function(index){
+                    $(this).css({"width":$itemWidth+"px"});             
+                });
+        			
+        
+            
+        	  var $optionSets = $('#options .option-set'),
+        	      $optionLinks = $optionSets.find('a');
+        
+        	  $optionLinks.click(function(){
+        	    var $this = $(this);
+        	    // don't proceed if already selected
+        	    if ( $this.hasClass('selected') ) {
+        	      return false;
+        	    }
+        	    var $optionSet = $this.parents('.option-set');
+        	    $optionSet.find('.selected').removeClass('selected');
+        	    $this.addClass('selected');
+        
+        	    // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        	    var options = {},
+        	        key = $optionSet.attr('data-option-key'),
+        	        value = $this.attr('data-option-value');
+        	    // parse 'false' as false boolean
+        	    value = value === 'false' ? false : value;
+        	    options[ key ] = value;
+        	    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+        	      // changes in layout modes need extra logic
+        	      changeLayoutMode( $this, options )
+        	    } else {
+        	      // otherwise, apply new options
+        	      $container.isotope( options );
+        	    }
+        	    
+        	    return false;
+        	  });		
+        
+            };
+    });
+</script> 
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow.js"></script>
+<script src="js/device.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <div id="ie6-alert" style="display:none;">
+    <img src="images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.useso.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+<body>
+<!--header-->
+<header>
+    <div class="container">
+        <h1 class="navbar-brand navbar-brand_ wow fadeInDown" data-wow-delay="0.3s"><a href="index.html"><span>personal trainer</span><strong>Michelle Cox</strong><img src="images/cross.png" alt=""></a></h1>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix wow fadeInUp" data-wow-delay="0.1s" role="navigation">
+        <div class="container">
+            <ul class="nav sf-menu clearfix">
+                <li><a href="index.html">home</a></li>
+                <li class="sub-menu"><a href="index-1.html">about</a><span></span>
+                    <ul class="submenu">
+        				<li><a href="#">columns 01</a></li>
+        				<li><a href="#">columns 02</a><span class="fa fa-angle-right"></span>
+                            <ul class="submenu">
+                                <li><a href="#">columns 04</a></li>
+                                <li><a href="#">columns 05</a></li>
+                              </ul> 
+                        </li>
+        				<li><a href="#">columns 03</a></li>
+        			</ul>
+                </li>
+                <li><a href="index-2.html">programs</a></li>
+                <li class="active"><a href="index-3.html">gallery</a></li>
+                <li><a href="index-4.html">contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="content indent">
+    <!--content-->
+    <div class="thumb-box10">
+        <div class="container">
+            <h2 class="wow fadeInUp">gallery</h2>
+            <div id="options" class="clearfix wow fadeInLeft">
+                <ul id="filters" class="pagination option-set clearfix" data-option-key="filter">
+                    <li><a href="#filter" data-option-value="*" class="selected">show all</a></li>
+                    <li><a href="#filter" data-option-value=".first_category">first category</a></li>
+                    <li><a href="#filter" data-option-value=".second_category">second category</a></li>
+                    <li><a href="#filter" data-option-value=".third_category">third category</a></li>
+                </ul>
+            </div>
+            <div class="izotope-box wow fadeInUp" data-wow-delay="0.1s">
+                <div id="container" class="clearfix">
+                    <div class="element transition second_category" data-category="transition">
+                        <figure><a href="images/img7.jpg"><i></i><img src="images/page4_pic1.jpg" alt=""></a></figure>
+                    </div>
+                   <div class="element transition" data-category="transition">
+                        <figure><a href="images/img8.jpg"><i></i><img src="images/page4_pic2.jpg" alt=""></a></figure>
+                    </div>
+                    <div class="element transition third_category" data-category="transition">
+                        <figure><a href="images/img9.jpg"><i></i><img src="images/page4_pic3.jpg" alt=""></a></figure>
+                    </div>
+                    <div class="element transition first_category" data-category="transition">
+                        <figure><a href="images/img10.jpg"><i></i><img src="images/page4_pic4.jpg" alt=""></a></figure>
+                    </div>
+                    <div class="element transition" data-category="transition">
+                        <figure><a href="images/img11.jpg"><i></i><img src="images/page4_pic5.jpg" alt=""></a></figure>
+                    </div>
+                    
+                    <div class="element transition third_category" data-category="transition">
+                        <figure><a href="images/img12.jpg"><i></i><img src="images/page4_pic6.jpg" alt=""></a></figure>
+                    </div>
+                    <div class="element transition first_category" data-category="transition">
+                        <figure><a href="images/img13.jpg"><i></i><img src="images/page4_pic7.jpg" alt=""></a></figure>
+                    </div>
+                    <div class="element transition second_category" data-category="transition">
+                        <figure><a href="images/img14.jpg"><i></i><img src="images/page4_pic8.jpg" alt=""></a></figure>
+                    </div>
+                    
+                    <div class="element transition third_category second_category" data-category="transition">
+                        <figure><a href="images/img15.jpg"><i></i><img src="images/page4_pic9.jpg" alt=""></a></figure>
+                    </div>
+                    <div class="element transition first_category second_category" data-category="transition">
+                        <figure><a href="images/img16.jpg"><i></i><img src="images/page4_pic10.jpg" alt=""></a></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <strong class="wow fadeInUp">personal trainer</strong>
+        <p class="wow fadeInUp" data-wow-delay="0.1s">&copy; <em id="copyright-year"></em> | <a href="index-5.html">Privacy Policy</a></p>
+    </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script type="text/javascript" src="../../include.js"></script></body>
+</html>
+

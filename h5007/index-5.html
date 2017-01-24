@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="page-1">
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/grid.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact-form.css" media="screen">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+  <link rel="stylesheet" href="css/contact-form.css" media="screen">
+  <script src="js/TMForm.js"></script>
+  <script src="js/modal.js"></script>  
+   <script src='js/js'></script>  
+ <!--[if lt IE 8]>
+   <div style=" clear: both; text-align:center; position: relative;">
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="images/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+<![endif]-->
+
+ 
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+<body>
+
+  <!--========================================================
+                            HEADER 
+  =========================================================-->
+
+  <header id="header">
+    <div id="stuck_container">
+     
+          
+              
+                <div class="header-logo">
+                  <a href="index.html"><h1>building <img src="images/logo.png" alt="logo-image"> company</h1></a>
+                </div>
+
+                <div class="header-navigation">
+                  <nav>
+                    <ul class="sf-menu">
+                      <li ><a href="index.html">Home</a></li>
+                      <li ><a href="index-1.html">Projects</a>
+                        
+                      </li>
+                      <li ><a href="index-2.html">Services</a>
+                          <ul>
+                          <li><a href="#">Aliquam congue</a></li>
+                          <li><a href="#">Fermentum nisl</a>
+                            <ul>
+                              <li><a href="#">Enim adipiscing </a></li>
+                              <li><a href="#">Aliquam congue</a></li>
+                              <li><a href="#">Fermentum nisl</a></li>
+                               <li><a href="#">Mauris accumsan</a></li>
+                               <li><a href="#">Nulla vel diam</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Mauris accumsan </a></li>
+                           <li><a href="#">Nulla vel diam</a></li>
+                            <li><a href="#">Sed in lacus ut</a></li>
+                           
+                        </ul>
+                      </li>
+                      <li><a href="index-3.html">About</a></li>
+                      <li ><a href="index-4.html">Blog</a></li>
+                      <li class="current"><a href="index-5.html">Contacts</a></li>
+                    </ul>
+                  </nav>
+                  <div class="clear"></div>
+                </div>
+
+                
+                
+            
+                                      
+          
+        
+      
+    </div>
+  </header>
+<!--========================================================
+                            CONTENT 
+  =========================================================-->
+  
+  <section id="content">
+    <div class="min-body">
+      <div class="container">
+        <div class="big-text5">
+        <div class="row">
+          <div class="grid_12">
+            <h2>Contact us</h2>
+            <div class="dotted-border"></div>
+          </div>
+        </div>
+      </div>
+
+       <div class="contact-form-body">
+          <form id="contact-form" method="post" action="#">
+             <fieldset>
+                <div class="row">
+                  <div class="grid_4">
+                    <label class="name">
+                      <input type="text" name="name" placeholder="Name" value="" data-constraints="@Required @JustLetters"  />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid name.</span>
+                    </label>
+                  </div>
+
+                  <div class="grid_4">
+                    <label class="name">
+                      <input type="text" name="last_name" placeholder="Phone" value="" data-constraints="@Required @JustNumbers"  />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid number.</span>
+                    </label>
+                  </div>
+
+                  <div class="grid_4">
+                      <label class="email">
+            <input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email" />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid email.</span>
+            </label>
+                  </div>
+                </div>
+                  <label class="message">
+                      <textarea name="message" rows="7" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*The message is too short.</span>
+                    </label>
+                    <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                    <div class="form-buttons">
+                      <div class="button-send">
+                        <a href="#" class="pine"  data-type="submit" >Send your message</a>
+                      </div>
+                    </div>
+          </fieldset> 
+           <div class="modal fade response-message">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  You message has been sent! We will be in touch soon.
+                </div>      
+              </div>
+            </div>
+          </div>
+          </form>
+          </div>
+
+      </div>
+
+
+
+    <div class="block-map">
+      <div class="map">
+             <div class="useso-map-api"> 
+                <div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div>
+              </div> 
+      </div>
+
+    </div>
+
+    <div class="back-blue">
+      <div class="container">
+        <div class="row">
+          
+         
+          <div class="contacts">
+            <div class="grid_3">
+            <div class="contact">
+              <h3 class="title-3-white">berlin</h3>
+              <div class="dotted-border2"></div>
+              <p>8901 Marmora Road,<br>
+              Berlin, D04 89GR.<br>
+              Telephone:  +1 800 603 6035<br>
+              E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+              </p>
+            </div>
+</div>
+<div class="grid_3">
+            <div class="contact">
+              <h3 class="title-3-white">london</h3>
+              <div class="dotted-border2"></div>
+              <p>9863 - 9867 Mill Road, <br>
+                London, MG09 99HT<br>
+                 Telephone:  +1 800 603 6035<br>
+              E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+              </p>
+            </div>
+</div>
+<div class="grid_3">
+            <div class="contact">
+              <h3 class="title-3-white">LOS ANGELES</h3>
+              <div class="dotted-border2"></div>
+              <p>2346 Antonio Road,<br>
+                Los Angeles, D04 89GR.<br>
+                 Telephone:  +1 800 603 6035<br>
+              E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+              </p>
+             </div>
+</div>
+<div class="grid_3">
+            <div class="contact">
+              <h3 class="title-3-white">NEW YORK</h3>
+              <div class="dotted-border2"></div>
+              <p>9870 St Vincent Place,<br>
+                New York, D04 89GR.<br>
+                 Telephone:  +1 800 603 6035<br>
+              E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+              </p>
+            </div>
+</div>
+<div class="clear"></div>
+
+          </div>
+       
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+    </section>
+
+    
+    <!--========================================================
+                            FOOTER
+  =========================================================-->
+ 
+     <footer>
+        <div class="container">
+          <div class="row">
+            <div class="grid_12">
+              <div class="footer_text">
+              Element 7 &copy; <span id="copyright-year"></span> All Rights Reserved <span class="line">|</span>  <span><a href="index-6.html">Privacy Policy</a></span>
+              </div>
+            </div>
+            </div>
+          </div>
+        
+      
+      
+    </footer> 
+   
+    <!--========================================================
+                            END FOOTER
+  =========================================================-->
+  
+  
+ <script src="js/script.js"></script>
+
+
+
+
+<script type="text/javascript" src="../../include.js"></script></body>
+</html>
+
