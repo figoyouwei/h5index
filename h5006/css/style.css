@@ -558,6 +558,8 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 	background: #101011;
 	text-align: center;
 }
+
+/*
 .thumb-box6 p i {
 	background: url(../images/q1.png) no-repeat;
 	width: 12px;
@@ -567,6 +569,9 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 	position: relative;
 	top: -5px;
 }
+*/
+
+/*
 .thumb-box6 p b {
 	background: url(../images/q2.png) no-repeat;
 	width: 12px;
@@ -576,6 +581,8 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 	position: relative;
 	top: 5px;
 }
+*/
+
 .thumb-box6 a {
 	color: #ffffff;
 	text-transform: uppercase;
