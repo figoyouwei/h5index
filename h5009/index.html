@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name = "format-detection" content = "telephone=no">
+
+
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href='css/css' rel='stylesheet'>
+  <link href='css/css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel='stylesheet' href='css/camera.css'>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <script src="js/jquery.mobile.customized.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      //----------------WOW ini-----------------
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }
+      else { $('.wow').css( 'visibility', 'visible' ); }
+    });
+  </script>
+  <!--<![endif]-->
+
+  <script src='js/camera.js'></script>
+  <script>
+    $(document).ready(function(){
+      //----------------Camera ini-----------------
+      $('.camera_wrap').camera({
+        height: '53.0808%',
+        minHeight: '320',
+        loader: false,
+        navigation: false,
+        playPause: false,
+        thumbnails: false,
+        pagination: true,
+        fx: 'topLeftBottomRight',        
+        onLoaded  : function() { 
+          $('.header-slider').css({'padding-top': '0' });
+          $('.camera_wrap').css({'position': 'relative' });
+        }
+      }); 
+    });
+  </script>
+
+  <!--[if lt IE 8]>
+     <div style=" clear: both; text-align:center; position: relative;">
+       <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+         <img src="images/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+      </a>
+    </div>
+  <![endif]-->
+  
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+<body>
+  <!--========================================================
+                            HEADER 
+  =========================================================-->
+  <header id="header">
+    <section class="header-top">
+      <div id="stuck_container">
+        <div class="container">
+          <div class="row">
+            <div class="grid_12">
+            <!--=======================-->
+              <div class="header-top_s1">
+                <h1><a href="index.html"><img src="images/logo_bg.png" alt="">Cat breeder</a></h1>
+              </div>
+              <div class="header-top_s2">
+                <nav>
+                  <ul class="sf-menu">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="index-1.html">About</a>
+                      <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">What we do</a>
+                          <ul>
+                            <li><a href="#">Dolore ipsu</a></li>
+                            <li><a href="#">Consecte</a></li>
+                            <li><a href="#">Elit conseq</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Folio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Mail</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="index-2.html">Folio</a></li>
+                    <li><a href="index-3.html">Kittens</a></li>
+                    <li><a href="index-4.html">Blog</a></li>
+                    <li><a href="index-5.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>              
+            <!--=======================-->
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="header-slider">
+      <div class="camera_wrap">
+
+        <div data-src="images/slide.jpg">
+          <div class="camera_caption color-1"><div class="fadeIn camera_effected">
+            <div class="container">
+              <div class="row">
+                <div class="grid_12">
+                <!--=======================-->
+                  <div class="camera_caption_s1 text-5">The most gracious</div>
+                  <div class="camera_caption_s2 text-6">creatures!</div>
+                  <a href="#" class="camera_caption_s3 btn btn__mod-1 btn__mod-2">Read more</a>
+                <!--=======================-->
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div data-src="images/slide1.jpg">
+          <div class="camera_caption color-1"><div class="fadeIn camera_effected">
+            <div class="container">
+              <div class="row">
+                <div class="grid_12">
+                <!--=======================-->
+                  <div class="camera_caption_s1 text-5">Find your best friend and</div>
+                  <div class="camera_caption_s2 text-6">companion!</div>
+                  <a href="#" class="camera_caption_s3 btn btn__mod-1 btn__mod-2">Read more</a>
+                <!--=======================-->
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div data-src="images/slide2.jpg">
+          <div class="camera_caption color-1"><div class="fadeIn camera_effected">
+            <div class="container">
+              <div class="row">
+                <div class="grid_12">
+                <!--=======================-->
+                  <div class="camera_caption_s1 text-5">Get to know everything about</div>
+                  <div class="camera_caption_s2 text-6">your cat!</div>
+                  <a href="#" class="camera_caption_s3 btn btn__mod-1 btn__mod-2">Read more</a>
+                <!--=======================-->
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+      </div>
+    </section>
+  </header>
+  <!--========================================================
+                            CONTENT 
+  =========================================================-->
+  <section id="content">
+    <article class="super-box-2 bg-img-1" data-stellar-background-ratio="-0.2">
+      <div class="container">
+        <div class="row">
+          <div class="grid_12">
+          <!--=======================-->
+            <div class="block-3 wow zoomInUp">
+            <a href="index-2.html" class="block-3_hover">
+              <!-- </a> --><div class="block-3_s1 text-7">Gallery</div>
+              <div class="block-3_s2 text-2">of cats and kittens</div>
+              <div class="block-3_s3 fa fa-camera-retro"></div>
+            </a>
+            </div>
+          <!--=======================-->
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="super-box-1-1">
+      <div class="container">
+        <div class="row">
+          <div class="grid_4">
+          <!--=======================-->
+            <h2 class="heading text-2 color-4 wow fadeInUp">About</h2>
+            <div class="block-1-2 wow fadeInLeft">
+              <div class="img-box"><img src="images/page1_img1.jpg" alt=""></div>
+              <div class="subtitle text-1 color-4">Lorem ipsum dolo</div>
+              <p>Duis ultr icies pharetra magna. Donec accuan malesuada orcinec sitmet eros. Lorem ipsum dolor sit amet con secetuer adipiscing elit. Mauris fermen <br>tum dictum magna. Sed loreet aliquam leo.</p>
+              <p>Ut tellus dolor dapibus eget elementum vel cursus eleifend elit. Aenean auctor wisi et urna. Aliqurat volutpat. Duis ac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at neque.</p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          <!--=======================-->
+          </div>
+          <div class="grid_4">
+          <!--=======================-->
+            <h2 class="heading text-2 color-4 wow fadeInUp">Nutrition</h2>
+            <div class="block-1-2 wow fadeInUp">
+              <div class="img-box"><img src="images/page1_img2.jpg" alt=""></div>
+              <div class="subtitle text-1 color-4">Maecenas tristique orci</div>
+              <p>Ut tellus dolor dapibus eget elementum vel cursus eleifend elit. Aenean auctor wisi et urna. Aliqurat volutpat. Duis ac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at neque.</p>
+              <p>Vivamus eget nibh. Etiamus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et trices posuere cubilia<br>spendisse sollicitudin velit sed leo. Ut pharetra au.</p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          <!--=======================-->
+          </div>
+          <div class="grid_4">
+          <!--=======================-->
+            <h2 class="heading text-2 color-4 wow fadeInUp">Advice</h2>
+            <div class="block-1-2 wow fadeInRight">
+              <div class="img-box"><img src="images/page1_img3.jpg" alt=""></div>
+              <div class="subtitle text-1 color-4">Praesent vestibulum moles</div>
+              <p>Duis ultr icies pharetra magna. Donec accuan malesuada orcinec sitmet eros. Lorem ipsum dolor sit amet con secetuer adipiscing elit. Mauris fermen <br>tum dictum magna. Sed loreet aliquam leo.</p>
+              <p>Ut tellus dolor dapibus eget elementum vel cursus eleifend elit. Aenean auctor wisi et urna. Aliqurat volutpat. Duis ac turpis. Integer rutrum ante eu lacuestibulum libero nisl porta vel scelerisque eget malesuada at neque.</p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          <!--=======================-->
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="super-box-1-2 bg-img-2" data-stellar-background-ratio="-0.2">
+      <div class="container">
+        <div class="row">
+          <div class="grid_12">
+          <!--=======================-->
+            <h2 class="heading text-2 wow fadeInUp">Latest events</h2>
+            <div class="row">
+              <div class="grid_2">
+              <!--=======================-->
+                <div class="block-1-3 wow fadeInLeft">
+                <a href="#" class="block-1-3_hover">
+                  <!-- </a> --><div class="img-box"><img src="images/page1_img4.jpg" alt=""></div>
+                  <div class="block-1-3_unic text-4">15 min ago</div>                  
+                  <p>Duis ultr icies pharetra magna. Donec accuan malesuada </p>
+                  <span class="btn btn__mod-1">Read more</span>
+                </a>
+                </div>
+              <!--=======================-->
+              </div>
+              <div class="grid_2">
+              <!--=======================-->
+                <div class="block-1-3 wow fadeInLeft">
+                <a href="#" class="block-1-3_hover">
+                  <!-- </a> --><div class="img-box"><img src="images/page1_img5.jpg" alt=""></div>
+                  <div class="block-1-3_unic text-4">42 min ago</div>                  
+                  <p>Duis ultr icies pharetra magna. Donec accuan malesuada </p>
+                  <span class="btn btn__mod-1">Read more</span>
+                </a>
+                </div>
+              <!--=======================-->
+              </div>
+              <div class="grid_2">
+              <!--=======================-->
+                <div class="block-1-3 wow fadeInLeft">
+                <a href="#" class="block-1-3_hover">
+                  <!-- </a> --><div class="img-box"><img src="images/page1_img6.jpg" alt=""></div>
+                  <div class="block-1-3_unic text-4">2 days ago</div>                  
+                  <p>Duis ultr icies pharetra magna. Donec accuan malesuada </p>
+                  <span class="btn btn__mod-1">Read more</span>
+                </a>
+                </div>
+              <!--=======================-->
+              </div>
+              <div class="grid_2">
+              <!--=======================-->
+                <div class="block-1-3 wow fadeInRight">
+                <a href="#" class="block-1-3_hover">
+                  <!-- </a> --><div class="img-box"><img src="images/page1_img7.jpg" alt=""></div>
+                  <div class="block-1-3_unic text-4">5 days ago</div>                  
+                  <p>Duis ultr icies pharetra magna. Donec accuan malesuada </p>
+                  <span class="btn btn__mod-1">Read more</span>
+                </a>
+                </div>
+              <!--=======================-->
+              </div>
+              <div class="grid_2">
+              <!--=======================-->
+                <div class="block-1-3 wow fadeInRight">
+                <a href="#" class="block-1-3_hover">
+                  <!-- </a> --><div class="img-box"><img src="images/page1_img8.jpg" alt=""></div>
+                  <div class="block-1-3_unic text-4">2 weeks ago</div>                  
+                  <p>Duis ultr icies pharetra magna. Donec accuan malesuada </p>
+                  <span class="btn btn__mod-1">Read more</span>
+                </a>
+                </div>
+              <!--=======================-->
+              </div>
+              <div class="grid_2">
+              <!--=======================-->
+                <div class="block-1-3 wow fadeInRight">
+                <a href="#" class="block-1-3_hover">
+                  <!-- </a> --><div class="img-box"><img src="images/page1_img9.jpg" alt=""></div>
+                  <div class="block-1-3_unic text-4">2 weeks ago</div>                  
+                  <p>Duis ultr icies pharetra magna. Donec accuan malesuada </p>
+                  <span class="btn btn__mod-1">Read more</span>
+                </a>
+                </div>
+              <!--=======================-->
+              </div>
+            </div>
+          <!--=======================-->
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!--========================================================
+                            FOOTER 
+  =========================================================-->
+  <footer id="footer">
+    <section class="footer_s1 wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="grid_3">
+          <!--=======================-->
+            <div class="heading text-3">History</div>
+            <p>Duis ultr icies pharetra magna. Donec ac<br>cuan malesuada orcinec sitmet eros. Lorem ipsum dolor sit amet consecetuer adipisci<br>ng elit. Mau ante eu lacuestibulum liber.</p>
+          <!--=======================-->
+          </div>
+          <div class="preffix_1 grid_3">
+          <!--=======================-->
+            <div class="heading text-3">Tags</div>
+            <ul class="tags-list text__uppercase">
+              <li><a href="#">Cat</a></li>
+              <li><a href="#">Care</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Behavior</a></li>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">Kitten</a></li>
+              <li><a href="#">Forum</a></li>
+            </ul>
+          <!--=======================-->
+          </div>
+          <div class="preffix_1 grid_3">
+          <!--=======================-->
+            <div class="heading text-3">Get in touch</div>
+            <address>8901 Marmora Road,<br>Glasgow, D04 89GR.<br>Freephone:  +1 800 559 6580</address>
+          <!--=======================-->
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="footer_s2 text-4 text__light text__uppercase">
+    <div class="container">
+      <div class="row" style="text-align: center;">
+        <div class="grid_12" style="font-size: 18px;">
+          Web Master &copy; <span id="copyright-year"></span> • <a href="index-6.html" class="hover-color-4">Cloud Service</a>
+          <!--{%FOOTER_LINK} -->
+        </div>
+      </div>
+    </div>
+  </section>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script type="text/javascript"></script>
+<script type="text/javascript" src="../../include.js"></script></body>
+</html>
+

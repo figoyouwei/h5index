@@ -1,0 +1,42 @@
+.block-2_s1,
+.block-1-3 .img-box img,
+.block-3_s3,
+.btn__mod-1,
+.img-box__circle {
+  behavior: url(../images/PIE.htc); 
+  position: relative;
+}
+
+.camera_loader {
+  behavior: url(../images/PIE.htc); 
+  position: absolute;
+}
+
+#toTop {
+  behavior: url(../images/PIE.htc); 
+  position: fixed;
+}
+
+.gallery_item .overlayer span {
+  display: none;
+}
+
+.gallery_item:hover .overlayer { 
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4c000000', endColorstr='#4c000000');
+}
+.gallery_item:hover .overlayer span { 
+  display: block;
+}
+
+#stuck_container { min-height: 72px; }
+.header-slider { min-height: 0; }
+
+/* Contact Form Processing Box
+========================================================*/
+#contact-form .contact-form-loader { display: none; }
+#contact-form.processing .contact-form-loader { display: block; }
+.inner .item a .fa { display: none !important	; }
+.inner .item a:hover .fa { display: block !important; }
+.inner .item a .magnifier-overlay {	display: none !important; }
+.inner .item a:hover .magnifier-overlay {	display: block !important; }
+
