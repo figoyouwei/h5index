@@ -1533,6 +1533,8 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 	position: relative;
 	margin-bottom: 5px;
 }
+
+/*
 .list_carousel1 #foo1 > li p:after {
 	position: absolute;
 	width: 12px;
@@ -1540,8 +1542,12 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 	top: 0;
 	left: 0;
 	background: url(../images/q1.png) left 0 no-repeat;
+	
 	content: '';
 }
+*/
+
+/*
 .list_carousel1 #foo1 > li p:before {
 	position: absolute;
 	width: 12px;
@@ -1551,6 +1557,8 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 	background: url(../images/q2.png) left 0 no-repeat;
 	content: '';
 }
+*/
+
 .list_carousel1 #foo1 > li a {
 	color: #ffffff;
 	text-transform: uppercase;
@@ -1913,13 +1921,11 @@ footer {
 	background: #262626;
 	text-align: center;
 }
+
 footer p {
-	font: 300 30px 'Roboto Condensed';
-	color: #5b5d6c;
-	text-transform: uppercase;
-	letter-spacing: 12px;
-	margin: 0;
+	font-size: 16px;
 }
+
 footer p a {
 	color: #5b5d6c;
 	-webkit-transition: all 0.25s;
