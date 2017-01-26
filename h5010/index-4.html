@@ -55,160 +55,156 @@
 
 
 <body>
-<!--========================================================
-                          HEADER
-=========================================================-->
+
+<!-- HEADER-->
+
 <header id="header" class="stellar-block" data-stellar-background-ratio="0.5">
-  <div id="stuck_container">
-    <div class="container">
-      <div class="row">
-        <div class="grid_12">
-          <h1>
-            <a href="index.html">Sunrise</a>
-          </h1>
-          <nav>
-            <ul class="sf-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index-1.html">About</a>
-                <ul>
-                  <li><a href="#">Fermentum nisl</a>
-                    <ul>
-                      <li><a href="#">Enim adipiscing</a></li>
-                      <li><a href="#">Nulla venenatis</a></li>
-                      <li><a href="#">In pede mi</a></li>
-                      <li><a href="#">Aliquet sit amet</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Mauris accums</a></li>
-                  <li><a href="#">Nulla vel diam</a></li>
-                  <li><a href="#">Sed in lacus ut</a></li>
-                </ul>
-              </li>
-              <li><a href="index-2.html">Videos</a></li>
-              <li><a href="index-3.html">Blog</a></li>
-              <li class="current"><a href="index-4.html">Contacts</a></li>
-            </ul>
-            <div class="clearfix"></div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-<!--========================================================
-                          CONTENT
-=========================================================-->
-<section id="content" class="common">
-  <div class="wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="grid_12">
-          <div class="heading2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-            <h2>How to Find Us</h2>
-          </div>
-          <div class="useso-map1 wow zoomIn" data-wow-duration="1s" data-wow-delay="0.1s" id="useso-map">
-          	<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
-          </div>
-          <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus.</p>
-          <div class="address-block">
-            <address class="location wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-              <span>8901 Marmora Road,</span>
-              <span>Glasgow, D04 89GR.</span>
-            </address>
-            <address class="phone wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-              <span>+1 800 559 6580</span>
-              <span>+1 800 603 6035</span>
-            </address>
-            <address class="mail wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-              <a href="mailto:mail@demolink.org">mail@demolink.org</a>
-            </address>
-          </div>
-          <div class="heading2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-            <h2>Contact Form</h2>
-          </div>
-          <form id="contact-form">
-            <div class="contact-form-loader"></div>
-            <fieldset>
-              <div class="row">
-                <div class="grid_6">
-                  <label class="name wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                    <input type="text" name="name" placeholder="Name" data-constraints="@Required @JustLetters"/>
-                    <span class="empty-message">*This field is required.</span>
-                  </label>
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="grid_12">
+                        <h1>
+                            <a href="index.html">腾逊科技</a>
+                        </h1>
+                        <nav>
+                            <ul class="sf-menu">
+                                <li><a href="index.html">首页</a></li>
+                                <li><a href="index-1.html">关于我们</a>
+                                    <ul>
+                                        <li><a href="#">技术团队</a>
+                                            <ul>
+                                                <li><a href="#">Java</a></li>
+                                                <li><a href="#">AngularJS</a></li>
+                                                <li><a href="#">Mathematica</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">研发团队</a></li>
+                                        <li><a href="#">营销团队</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index-2.html">精品案例</a></li>
+                                <li><a href="index-3.html">官方博客</a></li>
+                                <li class="current"><a href="index-4.html">联系我们</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="grid_6">
-                  <label class="email wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <input type="text" name="email" placeholder="E-mail" value=""
-                           data-constraints="@Required @Email"/>
-                    <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*This is not a valid email.</span>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="grid_12">
-                  <label class="message wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <textarea name="message" placeholder="Message"
-                              data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                    <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*The message is too short.</span>
-                  </label>
-                </div>
-              </div>
-              <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
-              <div class="contact-form-buttons wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                <a href="#" data-type="submit" class="btn-big">Send message</a>
-              </div>
-            </fieldset>
-            <div class="modal fade response-message">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                    You message has been sent! We will be in touch soon.
-                  </div>
-                </div>
-              </div>
             </div>
-          </form>
         </div>
-      </div>
+    </header>
+
+
+<!-- CONTENT-->
+
+<section id="content" class="common">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="heading2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2>联系我们</h2>
+                    </div>
+                    <div class="useso-map1 wow zoomIn" data-wow-duration="1s" data-wow-delay="0.1s" id="useso-map">
+                        <iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
+                    </div>
+                    <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">我们致力于运用国际尖端的web技术，并提供智能web云服务的创新性解决方案；自助建站是我们公司的一款初级智能系统是您在以后电子商务的彼岸全新的起点。H5建站云是全球高端自助建站的领航者，在这里您可以用一种更智能的方式起航梦想。与传统的网站制作流程相比，我们的自助建站云系统可以让使用者根据市场的变化随时更新内容信息，摆脱对建站公司技术和人员的依赖。此外，大陆的备案制上线流程周期较长，我们提供即可上线的功能，让使用者在前端永远比竞争对手领先一步......</p>
+                    <div class="address-block">
+                        <address class="location wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <span>上海浦东新区陆家嘴</span>
+                            <span>花园石桥路33号花旗集团大厦</span>
+                        </address>
+                        <address class="phone wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <span>400-007-1818</span>
+                            <span>+1 800 603 6035</span>
+                        </address>
+                        <address class="mail wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <a href="mailto:mail@demolink.org">service@lenorase.com</a>
+                        </address>
+                    </div>
+                    <div class="heading2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2>在线留言</h2>
+                    </div>
+                    <form id="contact-form">
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+                            <div class="row">
+                                <div class="grid_6">
+                                    <label class="name wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                                        <input type="text" name="name" placeholder="姓名*" data-constraints="@Required @JustLetters"/>
+                                        <span class="empty-message">*必填项目</span>
+                                    </label>
+                                </div>
+                                <div class="grid_6">
+                                    <label class="email wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                                        <input type="text" name="email" placeholder="邮箱*" value=""
+                                        data-constraints="@Required @Email"/>
+                                        <span class="empty-message">*必填项目</span>
+                                        <span class="error-message">*输入错误，请再次输入</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="grid_12">
+                                    <label class="message wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                                        <textarea name="message" placeholder="留言*"
+                                        data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                        <span class="empty-message">*必填项目</span>
+                                        <span class="error-message">*亲爱的用户，再说点什么吧......</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                            <div class="contact-form-buttons wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <a href="#" data-type="submit" class="btn-big">提交</a>
+                            </div>
+                        </fieldset>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 
-<!--========================================================
-                          FOOTER
-=========================================================-->
+<!--FOOTER-->
+
 <footer id="footer">
-  <div class="wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="grid_12">
-          <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-            <a href="index.html">Sunrise</a> &copy; <span id="copyright-year"></span> All Rights Reserved  |  <a
-                  href="index-5.html">Privacy Policy</a>
-          </div>
-          <div class="socials1">
-            <ul class="socials1">
-              <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i class="fa fa-useso-plus"></i></a></li>
-              <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><a href="#"><i class="fa fa-skype"></i></a></li>
-              <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s"><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-            </ul>
-          </div>
-          <div class="clearfix"></div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <a href="index.html">版权所有</a> &copy; <span id="copyright-year"></span> 腾逊科技 | 云服务商：<a
+                        href="index-5.html">智能云</a>
+                    </div>
+                    <div class="socials1">
+                        <ul class="socials1">
+                            <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i class="fa fa-useso-plus"></i></a></li>
+                            <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"><a href="#"><i class="fa fa-skype"></i></a></li>
+                            <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s"><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
 
 <script src="js/script.js"></script>
