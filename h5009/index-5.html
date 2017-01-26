@@ -1,245 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact</title>
-  <meta charset="utf-8">
-  <meta name = "format-detection" content = "telephone=no">
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no">
 
 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href='css/css' rel='stylesheet'>
-  <link href='css/css' rel='stylesheet'>
-  
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animate.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href='css/css' rel='stylesheet'>
+    <link href='css/css' rel='stylesheet'>
 
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-migrate-1.2.1.js"></script>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-  <script src="js/js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
 
-  <!--[if (gt IE 9)|!(IE)]><!-->
-  <script src="js/wow.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      //----------------WOW ini-----------------
-      if ($('html').hasClass('desktop')) {
-        new WOW().init();
-      }
-      else { $('.wow').css( 'visibility', 'visible' ); }
-    });
-  </script>
-  <!--<![endif]--> 
+    <script src="js/js"></script>
 
-  <script src="js/modal.js"></script>
-  <script src="js/TMForm.js"></script> 
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function () {
+//----------------WOW ini-----------------
+if ($('html').hasClass('desktop')) {
+    new WOW().init();
+}
+else { $('.wow').css( 'visibility', 'visible' ); }
+});
+</script>
+<!--<![endif]--> 
 
-  <!--[if lt IE 8]>
-     <div style=" clear: both; text-align:center; position: relative;">
-       <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-         <img src="images/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-      </a>
-    </div>
-  <![endif]-->
-  
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-  <![endif]-->
+<script src="js/modal.js"></script>
+<script src="js/TMForm.js"></script> 
+
+<!--[if lt IE 8]>
+<div style=" clear: both; text-align:center; position: relative;">
+<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+<img src="images/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+</a>
+</div>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+<![endif]-->
 <style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
 <body>
-  <!--========================================================
-                            HEADER 
-  =========================================================-->
-  <header id="header">
+
+<!-- HEADER -->
+
+<header id="header">
     <section class="header-top">
-      <div id="stuck_container">
-        <div class="container">
-          <div class="row">
-            <div class="grid_12">
-            <!--=======================-->
-              <div class="header-top_s1">
-                <h1><a href="index.html"><img src="images/logo_bg.png" alt="">Cat breeder</a></h1>
-              </div>
-              <div class="header-top_s2">
-                <nav>
-                  <ul class="sf-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index-1.html">About</a>
-                      <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">What we do</a>
-                          <ul>
-                            <li><a href="#">Dolore ipsu</a></li>
-                            <li><a href="#">Consecte</a></li>
-                            <li><a href="#">Elit conseq</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">Folio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Mail</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="index-2.html">Folio</a></li>
-                    <li><a href="index-3.html">Kittens</a></li>
-                    <li><a href="index-4.html">Blog</a></li>
-                    <li class="current"><a href="index-5.html">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>              
-            <!--=======================-->
-            </div>          
-          </div>
-        </div>
-      </div>
-    </section>
-  </header>
-  <!--========================================================
-                            CONTENT 
-  =========================================================-->
-  <section id="content">
-    <article class="super-box">
-      <div class="container">
-        <div class="row">
-          <div class="grid_12">
-          <!--=======================-->
-            <h2 class="heading text-2 color-4 wow fadeInUp">How to find us</h2>
-            <section class="map" >
-              <div class="useso-map-api"> 
-                <div id="map-canvas" class="gmap">
-                	<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
-                </div> 
-              </div>
-            </section>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. </p>
-            <div class="block-4">
-              <div class="block-4_item">
-                <div class="wrap-box__left"><span class="fa fa-home"></span></div>
-                <div class="wrap-box__none text-8 color-4">8901 Marmora Road,<br>Glasgow, D04 89GR.</div>
-              </div>
-              <div class="block-4_item">
-                <div class="wrap-box__left"><span class="fa fa-phone"></span></div>
-                <div class="wrap-box__none text-8 color-4">+1 800 559 6580<br>+1 800 603 6035</div>
-              </div>
-              <div class="block-4_item">
-                <div class="wrap-box__left"><span class="fa fa-envelope"></span></div>
-                <div class="wrap-box__none text-8 color-4"><a href="mailto:mail@demolink.org">mail@demolink.org</a></div>
-              </div>
-            </div>
-          <!--=======================-->
-          </div>
-          <div class="grid_12">
-          <!--=======================-->
-            <h2 class="heading text-2 color-4 wow fadeInUp">Contact form</h2>
-            <form id="contact-form">
-              <div class="contact-form-loader"></div>
-              <fieldset>
+        <div id="stuck_container">
+            <div class="container">
                 <div class="row">
-                  <div class="grid_6">
-                  <!--=======================-->
-                    <label class="name">
-                      <input type="text" name="name" placeholder="Name*" value="" data-constraints="@Required @JustLetters">
-                      <span class="empty-message">*This field is required.</span>
-                      <span class="error-message">*This is not a valid name.</span>
-                    </label>
-                    <label class="email">
-                      <input type="text" name="email" placeholder="E-mail*" value="" data-constraints="@Required @Email">
-                      <span class="empty-message">*This field is required.</span>
-                      <span class="error-message">*This is not a valid email.</span>
-                    </label>
-                    <label class="phone">
-                      <input type="text" name="phone" placeholder="Phone" value="" data-constraints="@JustNumbers">
-                      <span class="empty-message">*This field is required.</span>
-                      <span class="error-message">*This is not a valid phone.</span>
-                    </label>
-                  <!--=======================-->
-                  </div>
-                  <div class="grid_6">
-                  <!--=======================-->
-                    <label class="message">
-                      <textarea name="message" placeholder="Message*" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                      <span class="empty-message">*This field is required.</span>
-                      <span class="error-message">*The message is too short.</span>
-                    </label>
-                  <!--=======================-->
-                  </div>
+                    <div class="grid_12">
+                        <!--=======================-->
+                        <div class="header-top_s1">
+                            <h1><a href="index.html"><img src="images/logo_bg.png" alt="">Cat breeder</a></h1>
+                        </div>
+                        <div class="header-top_s2">
+                            <nav>
+                                <ul class="sf-menu">
+                                    <li><a href="index.html">首页</a></li>
+                                    <li><a href="index-1.html">关于我们</a>
+                                        <ul>
+                                            <li><a href="#">研发团队</a></li>
+                                            <li><a href="#">技术团队</a>
+                                                <ul>
+                                                    <li><a href="#">Java</a></li>
+                                                    <li><a href="#">AngularJS</a></li>
+                                                    <li><a href="#">Mathematica</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">营销团队</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index-2.html">客户案例</a></li>
+                                    <li><a href="index-3.html">云服务</a></li>
+                                    <li><a href="index-4.html">公司动态</a></li>
+                                    <li class="current"><a href="index-5.html">联系我们</a></li>
+                                </ul>
+                            </nav>
+                        </div>              
+                        <!--=======================-->
+                    </div>          
                 </div>
-  
-                <div class="contact-form_bottom-section">
-                  <a href="#" class="btn" data-type="submit">Send message</a>
-                </div>  
-              </fieldset>
-              <div class="modal fade response-message">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                      <h4 class="modal-title">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                      You message has been sent! We will be in touch soon.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          <!--=======================-->
-          </div>
+            </div>
         </div>
-      </div>
+    </section>
+</header>
+
+<!-- CONTENT -->
+
+<section id="content">
+    <article class="super-box">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <!--=======================-->
+                    <h2 class="heading text-2 color-4 wow fadeInUp">联系我们</h2>
+                    <section class="map" >
+                        <div class="useso-map-api"> 
+                            <div id="map-canvas" class="gmap">
+                                <iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
+                            </div> 
+                        </div>
+                    </section>
+                    <p>我们致力于运用国际尖端的web技术，并提供智能web云服务的创新性解决方案；自助建站是我们公司的一款初级智能系统是您在以后电子商务的彼岸全新的起点。H5建站云是全球高端自助建站的领航者，在这里您可以用一种更智能的方式起航梦想。与传统的网站制作流程相比，我们的自助建站云系统可以让使用者根据市场的变化随时更新内容信息，摆脱对建站公司技术和人员的依赖。此外，大陆的备案制上线流程周期较长，我们提供即可上线的功能，让使用者在前端永远比竞争对手领先一步......</p>
+                    <div class="block-4">
+                        <div class="block-4_item">
+                            <div class="wrap-box__left"><span class="fa fa-home"></span></div>
+                            <div class="wrap-box__none text-8 color-4">上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</div>
+                        </div>
+                        <div class="block-4_item">
+                            <div class="wrap-box__left"><span class="fa fa-phone"></span></div>
+                            <div class="wrap-box__none text-8 color-4">400-007-1818<br>400-007-1818</div>
+                        </div>
+                        <div class="block-4_item">
+                            <div class="wrap-box__left"><span class="fa fa-envelope"></span></div>
+                            <div class="wrap-box__none text-8 color-4"><a href="mailto:mail@demolink.org">service@lenorase.com</a></div>
+                        </div>
+                    </div>
+                    <!--=======================-->
+                </div>
+                <div class="grid_12">
+                    <!--=======================-->
+                    <h2 class="heading text-2 color-4 wow fadeInUp">在线留言</h2>
+                    <form id="contact-form">
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+                            <div class="row">
+                                <div class="grid_6">
+                                    <!--=======================-->
+                                    <label class="name">
+                                        <input type="text" name="name" placeholder="姓名*" value="" data-constraints="@Required @JustLetters">
+                                        <span class="empty-message">*必填项目</span>
+                                        <span class="error-message">*输入错误，请再次输入</span>
+                                    </label>
+                                    <label class="email">
+                                        <input type="text" name="email" placeholder="邮箱*" value="" data-constraints="@Required @Email">
+                                        <span class="empty-message">*必填项目</span>
+                                        <span class="error-message">*输入错误，请再次输入</span>
+                                    </label>
+                                    <label class="phone">
+                                        <input type="text" name="phone" placeholder="电话" value="" data-constraints="@JustNumbers">
+                                        <span class="empty-message">*必填项目</span>
+                                        <span class="error-message">*输入错误，请再次输入</span>
+                                    </label>
+                                    <!--=======================-->
+                                </div>
+                                <div class="grid_6">
+                                    <!--=======================-->
+                                    <label class="message">
+                                        <textarea name="message" placeholder="留言*" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                        <span class="empty-message">*必填项目</span>
+                                        <span class="error-message">*输入错误，请再次输入</span>
+                                    </label>
+                                    <!--=======================-->
+                                </div>
+                            </div>
+
+                            <div class="contact-form_bottom-section">
+                                <a href="#" class="btn" data-type="submit">发送信息</a>
+                            </div>  
+                        </fieldset>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--=======================-->
+                </div>
+            </div>
+        </div>
     </article>
-  </section>
-  <!--========================================================
-                            FOOTER 
-  =========================================================-->
-  <footer id="footer">
+</section>
+
+<!--FOOTER -->
+
+<footer id="footer">
     <section class="footer_s1 wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="grid_3">
-          <!--=======================-->
-            <div class="heading text-3">History</div>
-            <p>Duis ultr icies pharetra magna. Donec ac<br>cuan malesuada orcinec sitmet eros. Lorem ipsum dolor sit amet consecetuer adipisci<br>ng elit. Mau ante eu lacuestibulum liber.</p>
-          <!--=======================-->
-          </div>
-          <div class="preffix_1 grid_3">
-          <!--=======================-->
-            <div class="heading text-3">Tags</div>
-            <ul class="tags-list text__uppercase">
-              <li><a href="#">Cat</a></li>
-              <li><a href="#">Care</a></li>
-              <li><a href="#">Breeds</a></li>
-              <li><a href="#">Behavior</a></li>
-              <li><a href="#">Health</a></li>
-              <li><a href="#">Kitten</a></li>
-              <li><a href="#">Forum</a></li>
-            </ul>
-          <!--=======================-->
-          </div>
-          <div class="preffix_1 grid_3">
-          <!--=======================-->
-            <div class="heading text-3">Get in touch</div>
-            <address>8901 Marmora Road,<br>Glasgow, D04 89GR.<br>Freephone:  +1 800 559 6580</address>
-          <!--=======================-->
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="grid_3">
+                    <!--=======================-->
+                    <div class="heading text-3">关于我们</div>
+                    <p>我们致力于运用国际尖端WEB技术<br>提供智能WEB创新性解决方案<br>自助建站是我们的一款初级智能系统<br>是您在以后电商彼岸的全新起点</p>
+                    <!--=======================-->
+                </div>
+                <div class="preffix_1 grid_3">
+                    <!--=======================-->
+                    <div class="heading text-3">快速导航</div>
+                    <ul class="tags-list text__uppercase">
+                        <li><a href="#">自助建站</a></li>
+                        <li><a href="#">模板库</a></li>
+                        <li><a href="#">图库</a></li>
+                        <li><a href="#">云服务</a></li>
+                        <li><a href="#">版本升级</a></li>
+                        <li><a href="#">我要续费</a></li>
+                        <li><a href="#">其它</a></li>
+                    </ul>
+                    <!--=======================-->
+                </div>
+                <div class="preffix_1 grid_3">
+                    <!--=======================-->
+                    <div class="heading text-3">联系我们</div>
+                    <address>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>热线电话: 400-007-1818</address>
+                    <!--=======================-->
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <section class="footer_s2 text-4 text__light text__uppercase">
-      <div class="container">
-        <div class="row">
-          <div class="grid_12">
-          <!--=======================-->
-            Cat breeder &copy; <span id="copyright-year"></span> • <a href="index-6.html" class="hover-color-4">Privacy Policy</a>
-          <!--=======================-->
-          </div>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="grid_12" style="font-size: 18px;">
+                    版权所有 | 腾逊科技 &copy; <span id="copyright-year"></span> •  云服务商: <a href="index-6.html" class="hover-color-4">智能云</a>
+                    <!--{%FOOTER_LINK} -->
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </footer>
+</footer>
 
-  <script src="js/script.js"></script>
-  <script type="text/javascript" src="../../include.js"></script></body>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="../../include.js"></script>
+</body>
 </html>
 

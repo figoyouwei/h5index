@@ -30,200 +30,195 @@
 <style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
 <body>
 
-  <!--========================================================
-                            HEADER 
-  =========================================================-->
+  <!-- HEADER-->
 
- <header id="header">
+<header id="header">
     <div id="stuck_container">
-     
-          
-              
-                <div class="header-logo">
-                  <a href="index.html"><h1>H5建站云<img src="images/logo.png" alt="logo-image">腾逊科技</h1></a>
-                </div>
 
-                <div class="header-navigation">
-                  <nav>
-                    <ul class="sf-menu">
-                      <li><a href="index.html">首页</a></li>
-                      <li><a href="index-1.html">云服务</a>
-                        
-                      </li>
-                      <li><a href="index-2.html">建站指南</a>
-                          <ul>
-                          <li><a href="#">建站流程</a></li>
-                          <li><a href="#">精美模板</a>
-                            <ul>
-                              <li><a href="#">金融类 </a></li>
-                              <li><a href="#">教育类</a></li>
-                              <li><a href="#">制造类</a></li>
-                               <li><a href="#">电子商务类</a></li>
-                               <li><a href="#">休闲娱乐</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">客户案例</a></li>
-                           <li><a href="#">常见问题</a></li>
+    <div class="header-logo">
+            <a href="index.html"><h1>H5建站云<img src="images/logo.png" alt="logo-image">腾逊科技</h1></a>
+        </div>
+
+        <div class="header-navigation">
+            <nav>
+                <ul class="sf-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="index-1.html">云服务</a>
+
+                    </li>
+                    <li><a href="index-2.html">建站指南</a>
+                        <ul>
+                            <li><a href="#">建站流程</a></li>
+                            <li><a href="#">精美模板</a>
+                                <ul>
+                                    <li><a href="#">金融类 </a></li>
+                                    <li><a href="#">教育类</a></li>
+                                    <li><a href="#">制造类</a></li>
+                                    <li><a href="#">电子商务类</a></li>
+                                    <li><a href="#">休闲娱乐</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">客户案例</a></li>
+                            <li><a href="#">常见问题</a></li>
                             <li><a href="#">其他</a></li>
-                           
+
                         </ul>
-                      </li>
-                      <li><a href="index-3.html">关于我们</a></li>
-                      <li><a href="index-4.html">最新动态</a></li>
-                      <li class="current"><a href="index-5.html">联系我们</a></li>
-                    </ul>
-                  </nav>
-                  <div class="clear"></div>
-                </div>
+                    </li>
+                    <li><a href="index-3.html">关于我们</a></li>
+                    <li><a href="index-4.html">最新动态</a></li>
+                    <li class="current"><a href="index-5.html">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
 
     </div>
-  </header>
-<!--========================================================
-                            CONTENT 
-  =========================================================-->
+</header>
+
+<!-- CONTENT-->
   
-  <section id="content">
+<section id="content">
     <div class="min-body">
-      <div class="container">
-        <div class="big-text5">
-        <div class="row">
-          <div class="grid_12">
-            <h2>联系我们</h2>
-            <div class="dotted-border"></div>
-          </div>
-        </div>
-      </div>
-
-       <div class="contact-form-body">
-          <form id="contact-form" method="post" action="#">
-             <fieldset>
+        <div class="container">
+            <div class="big-text5">
                 <div class="row">
-                  <div class="grid_4">
-                    <label class="name">
-                      <input type="text" name="name" placeholder="姓名:" value="" data-constraints="@Required @JustLetters"  />
-                      <span class="empty-message">*必填项目</span>
-                      <span class="error-message">*输入错误，请重新输入</span>
-                    </label>
-                  </div>
-
-                  <div class="grid_4">
-                    <label class="name">
-                      <input type="text" name="last_name" placeholder="电话:" value="" data-constraints="@Required @JustNumbers"  />
-                      <span class="empty-message">*必填项目</span>
-                      <span class="error-message">*电话输入错误，请重新输入</span>
-                    </label>
-                  </div>
-
-                  <div class="grid_4">
-                      <label class="email">
-            <input type="text" name="email" placeholder="邮箱:" value="" data-constraints="@Required @Email" />
-              <span class="empty-message">*必填项目</span>
-              <span class="error-message">*邮箱不可用，请重新输入</span>
-            </label>
-                  </div>
-                </div>
-                  <label class="message">
-                      <textarea name="message" rows="7" placeholder="留言:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                      <span class="empty-message">*必填项目</span>
-                      <span class="error-message">*亲爱的用户，再说点什么吧......</span>
-                    </label>
-                    <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
-                    <div class="form-buttons">
-                      <div class="button-send">
-                        <a href="#" class="pine"  data-type="submit" >提交</a>
-                      </div>
+                    <div class="grid_12">
+                        <h2>联系我们</h2>
+                        <div class="dotted-border"></div>
                     </div>
-          </fieldset> 
-           <div class="modal fade response-message">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title">Modal title</h4>
                 </div>
-                <div class="modal-body">
-                  You message has been sent! We will be in touch soon.
-                </div>      
-              </div>
             </div>
-          </div>
-          </form>
-          </div>
 
-      </div>
+            <div class="contact-form-body">
+                <form id="contact-form" method="post" action="#">
+                    <fieldset>
+                        <div class="row">
+                            <div class="grid_4">
+                                <label class="name">
+                                    <input type="text" name="name" placeholder="姓名:" value="" data-constraints="@Required @JustLetters"  />
+                                    <span class="empty-message">*必填项目</span>
+                                    <span class="error-message">*输入错误，请重新输入</span>
+                                </label>
+                            </div>
 
+                            <div class="grid_4">
+                                <label class="name">
+                                    <input type="text" name="last_name" placeholder="电话:" value="" data-constraints="@Required @JustNumbers"  />
+                                    <span class="empty-message">*必填项目</span>
+                                    <span class="error-message">*电话输入错误，请重新输入</span>
+                                </label>
+                            </div>
 
-
-    <div class="block-map">
-      <div class="map">
-             <div class="useso-map-api"> 
-                <div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div>
-              </div> 
-      </div>
-
-    </div>
-
-    <div class="back-blue">
-      <div class="container">
-        <div class="row">
-          
-         
-          <div class="contacts">
-            <div class="grid_3">
-            <div class="contact">
-              <h3 class="title-3-white">上海站</h3>
-              <div class="dotted-border2"></div>
-              <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>
-              联系电话: 400-007-1818<br>
-              电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
-              </p>
+                            <div class="grid_4">
+                                <label class="email">
+                                    <input type="text" name="email" placeholder="邮箱:" value="" data-constraints="@Required @Email" />
+                                    <span class="empty-message">*必填项目</span>
+                                    <span class="error-message">*邮箱不可用，请重新输入</span>
+                                </label>
+                            </div>
+                        </div>
+                        <label class="message">
+                            <textarea name="message" rows="7" placeholder="留言:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                            <span class="empty-message">*必填项目</span>
+                            <span class="error-message">*亲爱的用户，再说点什么吧......</span>
+                        </label>
+                        <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                        <div class="form-buttons">
+                            <div class="button-send">
+                                <a href="#" class="pine"  data-type="submit" >提交</a>
+                            </div>
+                        </div>
+                    </fieldset> 
+                    <div class="modal fade response-message">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    You message has been sent! We will be in touch soon.
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-</div>
-<div class="grid_3">
-            <div class="contact">
-              <h3 class="title-3-white">香港站</h3>
-              <div class="dotted-border2"></div>
-              <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>
-                联系电话: 400-007-1818<br>
-              电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
-              </p>
-            </div>
-</div>
-<div class="grid_3">
-            <div class="contact">
-              <h3 class="title-3-white">纽约站</h3>
-              <div class="dotted-border2"></div>
-              <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>
-                 联系电话: 400-007-1818<br>
-              电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
-              </p>
-             </div>
-</div>
-<div class="grid_3">
-            <div class="contact">
-              <h3 class="title-3-white">柏林站</h3>
-              <div class="dotted-border2"></div>
-              <p>9870 St Vincent Place,<br>
-                New York, D04 89GR.<br>
-                 联系电话: 400-007-1818<br>
-              电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
-              </p>
-            </div>
-</div>
-<div class="clear"></div>
 
-          </div>
-       
         </div>
-      </div>
-    </div>
+
+
+
+        <div class="block-map">
+            <div class="map">
+                <div class="useso-map-api"> 
+                    <div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div>
+                </div> 
+            </div>
+
+        </div>
+
+        <div class="back-blue">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="contacts">
+                        <div class="grid_3">
+                            <div class="contact">
+                                <h3 class="title-3-white">上海站</h3>
+                                <div class="dotted-border2"></div>
+                                <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>
+                                    联系电话: 400-007-1818<br>
+                                    电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid_3">
+                            <div class="contact">
+                                <h3 class="title-3-white">香港站</h3>
+                                <div class="dotted-border2"></div>
+                                <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>
+                                    联系电话: 400-007-1818<br>
+                                    电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid_3">
+                            <div class="contact">
+                                <h3 class="title-3-white">纽约站</h3>
+                                <div class="dotted-border2"></div>
+                                <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦<br>
+                                    联系电话: 400-007-1818<br>
+                                    电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid_3">
+                            <div class="contact">
+                                <h3 class="title-3-white">柏林站</h3>
+                                <div class="dotted-border2"></div>
+                                <p>9870 St Vincent Place,<br>
+                                    New York, D04 89GR.<br>
+                                    联系电话: 400-007-1818<br>
+                                    电子邮箱:<a href="mailto:mail@demolink.org"> service@lenorase.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
 
 
     </div>
 
-    </section>
+</section>
 
     
 <!-- FOOTER -->
