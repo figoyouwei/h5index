@@ -44,195 +44,146 @@
 
 <body>
 
-	<!--========================================================
-														HEADER 
-	=========================================================-->
-	<header id="header">
-		<div id="stuck_container">
-					
-						<h1><a href="index.html"><img src="images/logo.png" alt="Automobile"></a> </h1>
+<!--HEADER-->
 
-						<div class="search_main">
-							<a href="#" class="link_icon1"><i class="fa fa-search"></i></a>
-							<form id="search1" action="search.php" method="GET" accept-charset="utf-8">
-								<input type="text" name="s" value="" onfocus="myFocus(this);" onblur="myBlur(this);"/>
-								<a click="document.getElementById('search1').submit()" class="more_btn4"><i class="fa fa-angle-right"></i></a>
-							</form>
-						</div>
+<header id="header">
+	<div id="stuck_container">
 
-						<nav>
-							<ul class="sf-menu">
-								<li><a href="index.html">Home<strong></strong></a></li>
-								<li><a href="index-1.html">About<strong></strong></a>
-									<ul class="submenu">
-										<li><a href="#">Lacinia est</a></li>
-										<li><a href="#">Proin dictum </a>
-											<ul class="submenu2">
-												<li><a href="#">News</a></li>
-												<li><a href="#">Archive</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Elementum velit</a></li>
-										<li><a href="#">Consequat ante</a></li>
-									</ul>
-								</li>
-								<li><a href="index-2.html">Gallery<strong></strong></a></li>
-								<li><a href="index-3.html">News<strong></strong></a></li>
-								<li class="current" id="last-li"><a href="index-4.html">Contacts<strong></strong></a></li>
-							</ul>
-						</nav>
-						<div class="clear"></div>
+		<h1><a href="index.html"><img src="images/logo.png" alt="Automobile"></a> </h1>
 
+		<div class="search_main">
+			<a href="#" class="link_icon1"><i class="fa fa-search"></i></a>
+			<form id="search1" action="search.php" method="GET" accept-charset="utf-8">
+				<input type="text" name="s" value="" onfocus="myFocus(this);" onblur="myBlur(this);"/>
+				<a click="document.getElementById('search1').submit()" class="more_btn4"><i class="fa fa-angle-right"></i></a>
+			</form>
 		</div>
-	</header>
-	<!--========================================================
-														CONTENT 
-	=========================================================-->
-	<section id="content">
-
-
+		<nav>
+			<ul class="sf-menu">
+			<li><a href="index.html">首页<strong></strong></a></li>
+				<li><a href="index-1.html">关于我们<strong></strong></a>
+					<ul class="submenu">
+						<li><a href="#">研发团队</a></li>
+						<li><a href="#">技术团队 </a>
+							<ul class="submenu2">
+								<li><a href="#">Java</a></li>
+								<li><a href="#">AngularJS</a></li>
+								<li><a href="#"> Mathematica</a></li>
+							</ul>
+						</li>
+						<li><a href="#">营销团队</a></li>
+						<li><a href="#">企业文化</a></li>
+					</ul>
+				</li>
+				<li><a href="index-2.html">精品系列<strong></strong></a></li>
+				<li><a href="index-3.html">公司动态<strong></strong></a></li>
+				<li class="current" id="last-li"><a href="index-4.html">联系我们<strong></strong></a></li>
+			</ul>
+		</nav>
 		<div class="clear"></div>
 
+	</div>
+</header>
 
+<!--CONTENT-->
 
-
-		<div class="container pad2">
-			<h2 class=" wow fadeInUp">contact form </h2>
-
-
-			<form id="contact-form">
-				<div class="contact-form-loader"></div>
-				<fieldset>
-
-					<div class="row">
-						<div class="grid_4  wow fadeInLeft" data-wow-delay="0.6s">
-							<label class="name">
-								<input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
-								<span class="empty-message">*This field is required.</span>
-								<span class="error-message">*This is not a valid name.</span>
-							</label>
-						</div>
-						<div class="grid_4  wow fadeInLeft" data-wow-delay="0.3s">
-							<label class="email">
-								<input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
-								<span class="empty-message">*This field is required.</span>
-								<span class="error-message">*This is not a valid email.</span>
-							</label>
-						</div>
-						<div class="grid_4  wow fadeInLeft" data-wow-delay="0.0s">
-							<label class="phone">
-								<input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
-								<span class="empty-message">*This field is required.</span>
-								<span class="error-message">*This is not a valid phone.</span>
-							</label>
-						</div>
+<section id="content">
+	<div class="clear"></div>
+	<div class="container pad2">
+		<h2 class=" wow fadeInUp">在线留言</h2>
+		<form id="contact-form">
+			<div class="contact-form-loader"></div>
+			<fieldset>
+				<div class="row">
+					<div class="grid_4  wow fadeInLeft" data-wow-delay="0.6s">
+						<label class="name">
+							<input type="text" name="name" placeholder="姓名:" value="" data-constraints="@Required @JustLetters"  />
+							<span class="empty-message">*必填项目</span>
+							<span class="error-message">*输入错误，请再次输入</span>
+						</label>
 					</div>
-
-
-					<label class="message  wow fadeInLeft" data-wow-delay="0.4s">
-						<textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-						<span class="empty-message">*This field is required.</span>
-						<span class="error-message">*The message is too short.</span>
-					</label>
-					<div class="btns">
-						<a href="#" class="more_arr3 wow fadeInLeft" data-wow-delay="0.8s" data-type="reset">Clear <i class="fa fa-angle-right"></i></a>
-						<a href="#" class="more_arr3 wow fadeInRight" data-wow-delay="1.0s" data-type="submit">Send  <i class="fa fa-angle-right"></i></a>
+					<div class="grid_4  wow fadeInLeft" data-wow-delay="0.3s">
+						<label class="email">
+							<input type="text" name="email" placeholder="邮箱:" value="" data-constraints="@Required @Email" />
+							<span class="empty-message">*必填项目</span>
+							<span class="error-message">*输入错误，请再次输入</span>
+						</label>
 					</div>
-				</fieldset> 
-				<div class="modal fade response-message">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">Modal title</h4>
-							</div>
-							<div class="modal-body">
-								You message has been sent! We will be in touch soon.
-							</div>      
-						</div>
+					<div class="grid_4  wow fadeInLeft" data-wow-delay="0.0s">
+						<label class="phone">
+							<input type="text" name="phone" placeholder="电话:" value="" data-constraints="@Required @JustNumbers" />
+							<span class="empty-message">*必填项目</span>
+							<span class="error-message">*输入错误，请再次输入</span>
+						</label>
 					</div>
 				</div>
-			</form>
-
-
-
-
-
-
-
-
-
-
-
-		</div>
-
-
-
-		<div class="box-3 v2 marTop10">
+				<label class="message  wow fadeInLeft" data-wow-delay="0.4s">
+					<textarea name="message" placeholder="留言:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+					<span class="empty-message">*必填项目</span>
+					<span class="error-message">*亲爱的用户，再说点什么吧......</span>
+				</label>
+				<div class="btns">
+					<a href="#" class="more_arr3 wow fadeInLeft" data-wow-delay="0.8s" data-type="reset">重新填写 <i class="fa fa-angle-right"></i></a>
+					<a href="#" class="more_arr3 wow fadeInRight" data-wow-delay="1.0s" data-type="submit">发送信息  <i class="fa fa-angle-right"></i></a>
+				</div>
+			</fieldset> 
+			<div class="modal fade response-message">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							You message has been sent! We will be in touch soon.
+						</div>      
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="box-3 v2 marTop10">
 				<div class="container">
 
-					<div class="row">
-						<div class="grid_2">
-							<ul class="list1">
-								<li class="wow fadeInLeft" data-wow-delay="0.1s"><a href="index.html">Home</a></li>
-								<li class="wow fadeInLeft" data-wow-delay="0.2s"><a href="index-1.html">About</a></li>
-								<li class="wow fadeInLeft" data-wow-delay="0.3s"><a href="index-2.html">Gallery</a></li>
-								<li class="wow fadeInLeft" data-wow-delay="0.4s"><a href="index-3.html">News</a></li>
-								<li class="wow fadeInLeft current" data-wow-delay="0.5s"><a href="index-4.html">Contacts</a></li>
-							</ul>
-						</div>
-
-						<div class="grid_4">
-							<ul class="soc_icons">
-								<li class="wow fadeInRight" data-wow-delay="0.3s"><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-								<li class="wow fadeInRight" data-wow-delay="0.4s"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-								<li class="wow fadeInRight" data-wow-delay="0.5s"><a href="#"><i class="fa fa-rss"></i>Rss</a></li>
-							</ul>
-						</div>
-					</div>
+			<div class="row">
+				<div class="grid_2">
+					<ul class="list1">
+						<li class="wow fadeInLeft" data-wow-delay="0.1s"><a href="index.html">首页</a></li>
+						<li class="wow fadeInLeft" data-wow-delay="0.2s"><a href="index-1.html">关于我们</a></li>
+						<li class="wow fadeInLeft" data-wow-delay="0.3s"><a href="index-2.html">精品系列</a></li>
+						<li class="wow fadeInLeft" data-wow-delay="0.4s"><a href="index-3.html">公司动态</a></li>
+						<li class="wow fadeInLeft current" data-wow-delay="0.5s"><a href="index-4.html">联系我们</a></li>
+					</ul>
 				</div>
-
-				<section class="content_map wow fadeInRight" data-wow-delay="0.6s">
-					<div class="useso-map-api"> 
-						<div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div> 
-					</div> 
-				</section>
-
+<!--
+				<div class="grid_4">
+					<ul class="soc_icons">
+						<li class="wow fadeInRight" data-wow-delay="0.3s"><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+						<li class="wow fadeInRight" data-wow-delay="0.4s"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+						<li class="wow fadeInRight" data-wow-delay="0.5s"><a href="#"><i class="fa fa-rss"></i>Rss</a></li>
+					</ul>
+				</div>
 			</div>
-
-
-
-
-
-	</section>
-
-
-
-	<!--========================================================
-														FOOTER 
-	=========================================================-->
-	<footer id="footer">
-		<div class="container">
-			<h1 class="wow fadeInLeft"><a href="index.html"><img src="images/logo.png" alt="Automobile"></a> </h1>
-			<p class="txt_priv wow fadeInRight">&copy; <span id="copyright-year"></span>.  <a href="index-5.html">Privacy policy</a></p>
 		</div>
-	</footer>
+-->
 
+		<section class="content_map wow fadeInRight" data-wow-delay="0.6s">
+			<div class="useso-map-api"> 
+				<div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div> 
+			</div> 
+		</section>
+	</div>
+</section>
 
+<!--FOOTER-->
 
-	
-
-
-
+<footer id="footer">
+	<div class="container">
+		<h1 class="wow fadeInLeft"><a href="index.html"><img src="images/logo.png" alt="Automobile"></a> </h1>
+		<p class="txt_priv wow fadeInRight">版权所有 | 腾逊科技&copy; <span id="copyright-year"></span>.云服务商：<a href="#">智能云</a><br><!--{%FOOTER_LINK} --></p>
+	</div>
+</footer>
 <script src="js/script.js"></script>
-
-
-
-
-
-
-
-
 <script>
 	$('.banner111').hover(function(){
 		$('.more_txt1', this).addClass('animated pulse');
@@ -248,8 +199,6 @@
 	}
 
 
-
-
 	$('.more_arr3, .more_arr5').hover(function(){
 		$('i', this).addClass('animated swing');
 		// $('.zoom',this).addClass('animated swing');
@@ -263,8 +212,6 @@
 		// $('.zoom',this).removeClass('animated swing');
 	}
 </script>
-
-
 <script type="text/javascript" src="../../include.js"></script></body>
 </html>
 
