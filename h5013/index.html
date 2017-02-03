@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>  
+<script src="js/bootstrap-filestyle.js"></script>
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script> 
+<script src="js/jquery.touchSwipe.min.js"></script> 
+<script src='js/js'></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+   $(window).load(function() {
+     // Initialize the gallery
+    $('.carousel1 figure a').touchTouch();
+  });
+</script>
+<script>
+    $(window).load(function() {
+        $(function() {
+            $('#foo1').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '#prev1',
+				next: '#next1',
+				items: {
+					height: 'auto',
+					width:320,
+					visible: {
+						min: 1,
+						max: 3
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+		});  	 				
+      });
+</script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow.js"></script>
+<script src="js/device.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <div id="ie6-alert" style="display:none;">
+    <img src="images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.useso.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+<body>
+<!--header-->
+<header class="clearfix">
+    <div class="container">
+        <h1 class="navbar-brand navbar-brand_ wow fadeIn" data-wow-delay="0.2s"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+            <ul class="nav sf-menu clearfix">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="sub-menu"><a href="index-1.html">About</a><span class="fa fa-angle-down"></span>
+                    <ul class="submenu">
+        				<li><a href="#">History</a></li>
+        				<li><a href="#">Gallery</a><span class="fa fa-angle-right"></span>
+                            <ul class="submenu">
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Dolor</a></li>
+                                <li><a href="#">Sirtower</a></li>
+                            </ul> 
+                        </li>
+        				<li><a href="#">Events</a></li>
+        			</ul>
+                </li>
+                <li><a href="index-2.html">Our classes</a></li>
+                <li><a href="index-3.html">Coaches</a></li>
+                <li><a href="index-4.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="slider">  
+    <div class="camera_wrap">
+        <div data-src="images/picture1.jpg"></div>
+        <div data-src="images/picture2.jpg"></div>
+        <div data-src="images/picture3.jpg"></div>
+    </div>
+</div>
+<!--content-->
+<div class="content"> 
+    <div class="thumb-box1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <p class="title">How<br><span>to join</span></p>
+                </div>
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <strong>01</strong>
+                    <div class="extra-wrap">
+                        <p>Deis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInLeft">
+                    <strong>02</strong>
+                    <div class="extra-wrap">
+                        <p>Deis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box2">
+        <div class="container">
+            <h2 class="indent wow fadeInRight">About our club</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <h3>Duis autem vel eum iriure dolor</h3>
+                    <p>Deis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit </p>
+                </div>
+                <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h3>Claritas est etiam proces</h3>
+                    <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit </p>
+                </div>
+                <div class="col-lg-4 col-md-4 wow fadeInLeft">
+                    <h3>Ut wisi enim ad minim</h3>
+                    <p>Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaril </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" class="btn-default btn3 wow fadeInRight">read more</a>
+        </div>
+    </div>
+    <div class="thumb-box3">
+        <div class="container">
+            <h2 class="indent wow fadeInRight">Our coaches</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic1.jpg" alt=""></figure>
+                            <div class="caption">
+                                <h3>Amanda Smith</h3>
+                                <p>Deis autem vel eum iriure</p>
+                                <a href="#" class="btn-default btn1">contacts</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic2.jpg" alt=""></figure>
+                            <div class="caption">
+                                <h3>Diana Morgan</h3>
+                                <p>Autem vel eum iriure dolor in</p>
+                                <a href="#" class="btn-default btn1">contacts</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic3.jpg" alt=""></figure>
+                            <div class="caption">
+                                <h3>Jane Smith</h3>
+                                <p>Vel eum iriure dolor inh</p>
+                                <a href="#" class="btn-default btn1">contacts</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInLeft">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic4.jpg" alt=""></figure>
+                            <div class="caption">
+                                <h3>John Perry</h3>
+                                <p>Beel eum iriure dolor in drerit</p>
+                                <a href="#" class="btn-default btn1">contacts</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box4">
+        <div class="container">
+            <h2 class="indent wow fadeInRight">Gallery</h2>
+            <div class="list_carousel1 responsive clearfix wow fadeInUp">
+                <div class="list_btn1">
+                    <a id="prev1" class="prev" href="#"></a>
+                    <a id="next1" class="next" href="#"></a>
+                </div>
+                <ul id="foo1" class="carousel1">
+                    <li>
+                        <figure><a href="images/img1.jpg"><i></i><img src="images/page1_pic5.jpg" alt=""></a></figure>
+                    </li>
+					<li>
+                        <figure><a href="images/img4.jpg"><i></i><img src="images/page1_pic8.jpg" alt=""></a></figure>
+                    </li>
+                    <li>
+                        <figure><a href="images/img2.jpg"><i></i><img src="images/page1_pic6.jpg" alt=""></a></figure>
+                    </li>
+					<li>
+                        <figure><a href="images/img5.jpg"><i></i><img src="images/page1_pic9.jpg" alt=""></a></figure>
+                    </li>
+                    <li>
+                        <figure><a href="images/img3.jpg"><i></i><img src="images/page1_pic7.jpg" alt=""></a></figure>
+                    </li>
+					 <li>
+                        <figure><a href="images/img6.jpg"><i></i><img src="images/page1_pic10.jpg" alt=""></a></figure>
+                    </li>
+					 <li>
+                        <figure><a href="images/img2.jpg"><i></i><img src="images/page1_pic6.jpg" alt=""></a></figure>
+                    </li>
+                     <li>
+                        <figure><a href="images/img5.jpg"><i></i><img src="images/page1_pic9.jpg" alt=""></a></figure>
+                    </li>
+					<li>
+                        <figure><a href="images/img5.jpg"><i></i><img src="images/page1_pic9.jpg" alt=""></a></figure>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box6 wow fadeIn">
+        <div class="container">
+            <figure><img src="images/page1_icon1.png" alt=""></figure>
+            <p>Play, Learn, and Practise Badminton!</p>
+        </div>
+    </div>
+    <div class="thumb-box7">
+        <div class="container">
+            <h2 class="indent wow fadeInRight">News & Events</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic11.jpg" alt=""></figure>
+                            <div class="caption">
+                                <hr>
+                                <time datetime="2014-01-01">21 / 09 / 2014</time>
+                                <div class="box maxheight">
+                                    <a href="#">Vel eum iriure dolor</a>
+                                    <p>Deis autem vel eum iriure dolor in</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic12.jpg" alt=""></figure>
+                            <div class="caption">
+                                <hr>
+                                <time datetime="2014-01-01">31 / 09 / 2014</time>
+                                <div class="box maxheight">
+                                    <a href="#">Claritas est etiam proce</a>
+                                    <p>Autem vel eum iriure dolor in hendr</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInLeft">
+                    <div class="thumb-pad2">
+                        <div class="thumbnail">
+                            <figure><img src="images/page1_pic13.jpg" alt=""></figure>
+                            <div class="caption">
+                                <hr>
+                                <time datetime="2014-01-01">17 / 10 / 2014</time>
+                                <div class="box maxheight">
+                                    <a href="#">Ut wisi enim ad minim</a>
+                                    <p>Vel eum iriure dolor in hendrerit in</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-box5">
+        <div class="container">
+            <h2 class="indent wow fadeInRight">Contact form</h2>
+            <div class="contactForm2">
+                <form id="contact-form">
+                  <div class="contact-form-loader"></div>
+                      <fieldset>
+                        <label class="name form-div-1">
+                          <input type="text" name="name" placeholder="Name" value="" data-constraints="@Required @JustLetters"  />
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*This is not a valid name.</span>
+                        </label>
+                        <label class="email form-div-2">
+                          <input type="text" name="email" placeholder="Email" value="" data-constraints="@Required @Email" />
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*This is not a valid email.</span>
+                        </label>
+                        <label class="phone form-div-3">
+                          <input type="text" name="phone" placeholder="Phone" value="" data-constraints="@Required @JustNumbers" />
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*This is not a valid phone.</span>
+                        </label>
+                        <label class="message form-div-4">
+                          <textarea name="message" placeholder="Message" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*The message is too short.</span>
+                        </label>
+                        <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                        <div class="btns">
+                            <a href="#" data-type="submit" class="btn-default btn3">send</a>
+                        </div>
+                      </fieldset> 
+                      <div class="modal fade response-message">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                              You message has been sent! We will be in touch soon.
+                            </div>      
+                          </div>
+                        </div>
+                      </div>
+                </form>
+            </div>
+     </div>
+</div>
+<section class="content_map">
+      <div class="useso-map-api"> 
+        <div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div> 
+      </div> 
+</section>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <p class="wow fadeInUp">Copyright &copy; <em id="copyright-year"></em> <span>|</span><br><a href="index-5.html">Privacy Policy</a></p>
+    </div>
+  <!-- {%FOOTER_LINK} -->
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script type="text/javascript" src="../../include.js"></script></body>
+</html>
+

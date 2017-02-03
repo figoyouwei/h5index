@@ -1,0 +1,83 @@
+/****Subscribe Form****/
+#subscribe-form{
+	position: relative;
+	display: block;
+	margin-top: 22px;
+}
+#subscribe-form input {
+		 border:none;
+		 background:none;
+		 color:#402425;
+		 font:300 16px/20px 'Roboto', Arial, sans-serif;
+		 line-height:1.2307em;
+		 padding: 6px 4px 4px 4px;
+		 border-bottom: 1px solid #9a1e04;
+		 /*width:100%;*/
+		 width: 100%;
+		 outline:none;
+		 box-shadow:none;
+		 margin: 0;
+		 height: 32px;
+		 box-sizing: border-box;
+		-moz-box-sizing: border-box; /*Firefox 1-3*/
+		-webkit-box-sizing: border-box; /* Safari */
+		border-radius: 0;
+	}
+	#subscribe-form label {
+		display:block;
+		min-height: 41px;
+		position: relative;
+	
+		/*width: 100%;*/
+}
+	#subscribe-form {
+		position: relative;
+	}
+	#subscribe-form .error {
+		display:block;
+		overflow:hidden;
+		height:0px;
+		font-size:10px;
+		color:red;
+		left: 0px;
+		top: -10px;
+		position: absolute;
+		
+		-webkit-transition: all 0.3s ease-out; 
+		-moz-transition: all 0.3s ease-out; 
+		-o-transition: all 0.3s ease-out; 
+		transition: all 0.3s ease-out;
+	}
+	#subscribe-form label.invalid .error {
+		height:19px;
+	}
+	#subscribe-form .success {
+		width:100%;
+		/*height: 46px;
+		background:#fff;*/
+		color:red;
+		position:absolute;
+		z-index:10;
+		font-size:10px;
+		left:0px;
+		top:-12px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box; /*Firefox 1-3*/
+		-webkit-box-sizing: border-box; /* Safari */
+	}
+
+	#subscribe-form  .btns {
+		position:relative;
+		padding-top: 0px;
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+	
+		margin-top: 12px;
+}
+	#subscribe-form  .btns a {
+		margin: 0px 0 0 0px !important;
+		cursor: pointer;
+	
+}
+
