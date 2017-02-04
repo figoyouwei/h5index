@@ -568,7 +568,8 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 	background: #f3f3f3 url(../images/bg_pic5.jpg) left 0 no-repeat;
 }
 .thumb-box14 .col-lg-8 {
-	padding-top: 90px;
+	padding-top: 80px;
+	padding-left: 90px;
 }
 .thumb-box14 .container {
 	position: relative;
@@ -1637,7 +1638,7 @@ nav.tm_navbar .sub-menu > ul li > ul li a:hover {
 footer {
 	padding: 52px 0;
 	overflow: hidden;
-	text-align: right;
+	text-align: center;
 }
 footer p {
 	font: 18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
