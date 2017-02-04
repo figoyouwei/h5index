@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Quattrocento';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../images/WZDISdyil4HsmirlOdBRFHZ2MAKAc2x4R1uOSeegc5U.eot);
+  src: local('Quattrocento'), url(../images/WZDISdyil4HsmirlOdBRFHZ2MAKAc2x4R1uOSeegc5U.eot) format('embedded-opentype'), url(../images/WZDISdyil4HsmirlOdBRFHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+

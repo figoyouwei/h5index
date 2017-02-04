@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contacts</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact-form.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+	<!--<![endif]-->
+
+
+	<script src="js/TMForm.js"></script>
+	<script src="js/modal.js"></script>
+
+  <!--[if lt IE 9]>
+  	<script src="js/html5shiv.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+<style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+
+<body>
+
+	<!--========================================================
+														HEADER 
+	=========================================================-->
+	<header id="header" class="header_bg2">
+		<div id="stuck_container">
+			<div class="container">
+						<h1><a href="index.html"><img src="images/logo.png" alt="Motel"></a> </h1>
+					
+						<nav>
+							<ul class="sf-menu">
+								<li><a href="index.html">Home<strong></strong></a></li>
+								<li><a href="index-1.html">About Us<strong></strong></a>
+									<ul class="submenu">
+										<li><a href="#">History</a></li>
+										<li><a href="#">Archive</a>
+											<ul class="submenu2">
+												<li><a href="#">Nam liber</a></li>
+												<li><a href="#">Duisautem</a></li>
+												<li><a href="#">Eodemo</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Our Staff</a></li>
+									</ul>
+								</li>
+								<li><a href="index-2.html">Services<strong></strong></a></li>
+								<li><a href="index-3.html">Prices<strong></strong></a></li>
+								<li><a href="index-4.html">News<strong></strong></a></li>
+								<li class="current" id="last-li"><a href="index-5.html">Contacts<strong></strong></a></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+			</div>
+		</div>
+	</header>
+	<!--========================================================
+														CONTENT 
+	=========================================================-->
+	<section id="content"  class="content_pages">
+
+
+
+
+
+		<div class="container">
+			<div class="wrapper">
+				<h2>how to find us</h2>
+				<div class="title_icons">
+					<img src="images/title_icon11.png" alt="" class="no_resize">
+				</div>
+
+				<div class="map v2">
+					<figure class="map">
+						<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
+					</figure>
+				</div>
+
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+
+				<div class="row">
+
+
+					<div class="grid_3 wow fadeInUp" data-wow-duration="" data-wow-delay="0.0s">
+						<i class="fa fa-home icon2"></i>
+						<div class="box">
+							<p>8901 Marmora Road,<br>Glasgow, D04 89GR.</p>
+						</div>
+					</div>
+
+					<div class="grid_3 wow fadeInUp" data-wow-duration="" data-wow-delay="0.2s">
+						<i class="fa fa-phone icon2"></i>
+						<div class="box">
+							<p>+1 800 559 6580<br>+1 800 603 6035</p>
+						</div>
+					</div>
+
+					<div class="grid_3 wow fadeInUp" data-wow-duration="" data-wow-delay="0.4s">
+						<i class="fa fa-envelope icon2"></i>
+						<div class="box">
+							<p><a href="#" class="link1">mail@demolink.org</a></p>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div>
+			</div>
+
+
+
+
+			<h2>contact form</h2>
+			<div class="title_icons">
+				<img src="images/title_icon12.png" alt="" class="no_resize">
+			</div>
+
+
+			<form id="contact-form">
+							<div class="contact-form-loader"></div>
+							<fieldset>
+
+								<div class="row">
+									<div class="grid_6">
+										<label class="name">
+											<input type="text" name="name" placeholder="Name" value="" data-constraints="@Required @JustLetters"  />
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*This is not a valid name.</span>
+										</label>
+
+										<label class="email">
+											<input type="text" name="email" placeholder="E-mail" value="" data-constraints="@Required @Email" />
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*This is not a valid email.</span>
+										</label>
+
+										<label class="phone">
+											<input type="text" name="phone" placeholder="Phone" value="" data-constraints=" @JustNumbers" />
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*This is not a valid phone.</span>
+										</label>
+									</div>
+
+									<div class="grid_6">
+										<label class="message">
+											<textarea name="message" placeholder="Message" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*The message is too short.</span>
+										</label>
+									</div>
+
+								</div>
+
+								<div class="btns">
+									<!-- <a href="#" class="more_btn" data-type="reset">Clear</a> -->
+									<a href="#" class="more_btn2" data-type="submit">Send message</a>
+								</div>
+							</fieldset> 
+							<div class="modal fade response-message">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title">Modal title</h4>
+										</div>
+										<div class="modal-body">
+											You message has been sent! We will be in touch soon.
+										</div>      
+									</div>
+								</div>
+							</div>
+						</form>
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+	</section>
+
+
+
+	<!--========================================================
+														FOOTER 
+	=========================================================-->
+	<footer id="footer" data-stellar-background-ratio="-0.1">
+		<div class="container">
+
+					<div class="footer_block">
+						<h1 class=" wow fadeInLeft"><a href="index.html"><img src="images/logo_footer.png" alt="Motel"></a> </h1>
+
+						<p class="txt_priv wow fadeInRight">Copyright  &copy; <span id="copyright-year"></span> | <a href="index-6.html">Privacy Policy</a></p>
+					</div>
+
+					
+
+
+		</div>
+	</footer>
+
+
+
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>

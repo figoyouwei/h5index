@@ -1,0 +1,121 @@
+.search1,
+.search2 {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+.search1 .input_wrap,
+.search2 .input_wrap {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.search1 input,
+.search2 input {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  height: 100%;
+  outline: none;
+  background-color: transparent;
+  color: #464646;
+  border: none;
+  overflow: hidden;
+  margin: 0;
+}
+.search1 {
+  width: 643px;
+  margin: 0 auto;
+  height: 84px;
+  line-height: 84px;
+}
+.search1 input {
+  width: 80%;
+  font: normal 32px/84px Arial;
+}
+@media (max-width: 767px) {
+  .search1 input {
+    width: 70%;
+  }
+}
+.search1 a {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 84px;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 44px;
+  line-height: 84px;
+  box-sizing: border-box;
+}
+.search1 a:hover {
+  text-decoration: none;
+  background: #464646;
+}
+@media (max-width: 479px) {
+  .search1 a {
+    width: 50px;
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .search1 {
+    width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .search1 {
+    height: 60px;
+  }
+}
+.search2 {
+  margin: 32px 0 24px;
+  line-height: 50px;
+}
+.search2 .input_wrap {
+  width: 81%;
+  height: 50px;
+  margin-right: 20px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .search2 .input_wrap {
+    width: 77%;
+  }
+}
+@media (max-width: 767px) {
+  .search2 .input_wrap {
+    width: 61%;
+  }
+}
+@media (max-width: 479px) {
+  .search2 .input_wrap {
+    width: 100%;
+  }
+}
+.search2 input {
+  width: 90%;
+  font: 300 18px/50px 'Open Sans', sans-serif;
+}
+.search2 a {
+  display: inline-block;
+  line-height: 23px;
+  margin-top: 0;
+}
+@media (max-width: 479px) {
+  .search2 {
+    text-align: center;
+  }
+  .search2 a {
+    margin-top: 15px;
+  }
+}
+

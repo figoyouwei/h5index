@@ -1,0 +1,89 @@
+﻿/*========================================================
+                     Subscribe Form
+  =======================================================*/
+.sub-form .email {
+  position: relative;
+  display: block;
+  margin-top: 3px;
+  border-bottom: 3px solid #fff;
+  line-height: 52px;
+  height: 52px;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.sub-form .email:hover {
+  border-bottom-color: #62919d;
+}
+.sub-form a[data-type="submit"] {
+  display: inline-block;
+  max-width: 100%;
+  width: 218px;
+  padding: 13px 0;
+  border: 3px solid #fff;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sub-form a[data-type="submit"]:hover {
+  background: #fff;
+  color: #62919d!important;
+}
+.sub-form .error,
+.sub-form .success {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 26px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.sub-form .error {
+  color: #f00;
+  overflow: hidden;
+  height: 0px;
+}
+.sub-form .success {
+  display: none;
+  width: 300px;
+  color: #0f0;
+}
+.sub-form label.invalid .error {
+  height: 26px;
+}
+.sub-form input {
+  display: block;
+  width: 100%;
+  height: inherit;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  outline: none!important;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  vertical-align: baseline;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .sub-form {
+    text-align: center;
+  }
+  .sub-form .email {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+}
+
