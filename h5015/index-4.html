@@ -57,37 +57,40 @@
         <h1 class="navbar-brand navbar-brand_ wow fadeIn" data-wow-delay="0.2s"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
         <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
             <ul class="nav sf-menu clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li class="sub-menu"><a href="index-1.html">About</a><span class="fa fa-angle-down"></span>
+                <li><a href="index.html">首页</a></li>
+                <li class="sub-menu"><a href="index-1.html">关于我们</a><span class="fa fa-angle-down"></span>
                     <ul class="submenu">
-        				<li><a href="#">Schedule</a></li>
-        				<li><a href="#">History</a><span class="fa fa-angle-right"></span>
+                        <li><a href="#">研发团队</a></li>
+                        <li><a href="#">技术团队</a><span class="fa fa-angle-right"></span>
                             <ul class="submenu">
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Dolorsit</a></li>
-                                <li><a href="#">Ametrew</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">AngularJS</a></li>
+                                <li><a href="#">Mathematica</a></li>
                             </ul> 
                         </li>
-        				<li><a href="#">Clients</a></li>
-        			</ul>
+                        <li><a href="#">营销团队</a></li>
+                    </ul>
                 </li>
-                <li><a href="index-2.html">Services</a></li>
-                <li><a href="index-3.html">News & Events</a></li>
-                <li class="active"><a href="index-4.html">Contacts</a></li>
+                <li><a href="index-2.html">建站指南</a></li>
+                <li><a href="index-3.html">云服务</a></li>
+                <li class="active"><a href="index-4.html">联系我们</a></li>
             </ul>
         </nav>
     </header>
 </div>
+
+<!--content-->
+
 <div class="content">
     <div class="container">
         <div class="thumb-box14">
             <h2 class="wow fadeInRight">contact info<span>Ut pharetra augue nec </span></h2>
             <section class="content_map wow zoomIn">
-                  <div class="useso-map-api"> 
+                <div class="useso-map-api"> 
                     <div id="map-canvas" class="gmap">
-                    	<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
+                        <iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
                     </div> 
-                  </div> 
+                </div> 
             </section>
         </div>
         <div class="thumb-box15">
@@ -105,59 +108,62 @@
                 <div class="col-lg-8 col-md-8 col-sm-8">
                     <h2 class="wow fadeInDown" data-wow-delay="0.1s">contact form<span>Ut pharetra augue nec</span></h2>
                     <form id="contact-form">
-                          <div class="contact-form-loader"></div>
-                          <fieldset>
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
                             <label class="name form-div-1">
-                              <input type="text" name="name" placeholder="Name*:" value="" data-constraints="@Required @JustLetters"  />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid name.</span>
+                                <input type="text" name="name" placeholder="Name*:" value="" data-constraints="@Required @JustLetters"  />
+                                <span class="empty-message">*必填项目.</span>
+                                <span class="error-message">*This is not a valid name.</span>
                             </label>
                             <label class="email form-div-2">
-                              <input type="text" name="email" placeholder="Email*:" value="" data-constraints="@Required @Email" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid email.</span>
+                                <input type="text" name="email" placeholder="Email*:" value="" data-constraints="@Required @Email" />
+                                <span class="empty-message">*必填项目.</span>
+                                <span class="error-message">*This is not a valid email.</span>
                             </label>
                             <label class="phone form-div-3">
-                              <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@JustNumbers" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid phone.</span>
+                                <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@JustNumbers" />
+                                <span class="empty-message">*必填项目.</span>
+                                <span class="error-message">*This is not a valid phone.</span>
                             </label>
                             <label class="message form-div-4">
-                              <textarea name="message" placeholder="Message*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*The message is too short.</span>
+                                <textarea name="message" placeholder="Message*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*The message is too short.</span>
                             </label>
                             <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
                             <div class="btns">
                                 <a href="#" data-type="submit" class="btn-default btn1">submit</a>
                                 <p>* required fields</p>
                             </div>
-                          </fieldset> 
-                          <div class="modal fade response-message">
+                        </fieldset> 
+                        <div class="modal fade response-message">
                             <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                  <h4 class="modal-title">Modal title</h4>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>      
                                 </div>
-                                <div class="modal-body">
-                                  You message has been sent! We will be in touch soon.
-                                </div>      
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <!--footer-->
+
 <footer>
     <div class="container">
         <figure class="wow fadeInDown"><img src="images/foo_logo.png" alt=""></figure>
-        <p class="wow fadeInUp">Copyright &copy; <em id="copyright-year"></em> | <a href="index-5.html">Privacy Policy</a></p>
+        <p class="wow fadeInUp">版权所有 &copy; <em id="copyright-year"></em>腾逊科技 | 云服务商：<a href="#">智能云</a></p>
     </div>
+  <!-- {%FOOTER_LINK} -->
 </footer>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/tm-scripts.js"></script>
