@@ -44,7 +44,9 @@
   <![endif]-->
 <style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
 <body>
+
 <!--header-->
+
 <header>
     <div class="container">
         <h1 class="navbar-brand navbar-brand_ wow fadeInDown" data-wow-delay="0.2s"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
@@ -52,109 +54,113 @@
     <div class="container">
         <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
             <ul class="nav sf-menu clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li class="sub-menu"><a href="index-1.html">About</a><span></span>
+                <li><a href="index.html">首页</a></li>
+                <li class="sub-menu"><a href="index-1.html">关于我们</a><span></span>
                     <ul class="submenu">
-        				<li><a href="#">Testimonials</a></li>
-        				<li><a href="#">History</a><span class="fa fa-angle-right"></span>
+                        <li><a href="#">研发团队</a></li>
+                        <li><a href="#">技术团队</a><span class="fa fa-angle-right"></span>
                             <ul class="submenu">
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Dolor</a></li>
-                                <li><a href="#">Sit amet</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">AngularJS</a></li>
+                                <li><a href="#">Mathematica</a></li>
                             </ul> 
                         </li>
-        				<li><a href="#">Clients</a></li>
-        			</ul>
+                        <li><a href="#">营销团队</a></li>
+                    </ul>
                 </li>
-                <li><a href="index-2.html">Services</a></li>
-                <li><a href="index-3.html">staff</a></li>
-                <li><a href="index-4.html">News</a></li>
-                <li class="active"><a href="index-5.html">Contacts</a></li>
+                <li><a href="index-2.html">云服务</a></li>
+                <li><a href="index-3.html">精英团队</a></li>
+                <li><a href="index-4.html">公司动态</a></li>
+                <li class="active"><a href="index-5.html">联系我们</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
+<!--content-->
+
 <div class="content indent">
     <div class="container">
         <section class="content_map indent wow zoomIn">
-              <div class="useso-map-api"> 
+            <div class="useso-map-api"> 
                 <div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div>
-              </div> 
+            </div> 
         </section>
     </div>
     <div class="thumb-box12">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <h2 class="wow fadeInLeft">Our addresses</h2>
+                    <h2 class="wow fadeInLeft">联系我们</h2>
                     <div class="info">
-                        <h3>Address 1:</h3>
-                        <p>The Company Name Inc.<br>8901 Marmora Road, Glasgow, D04 89GR.</p>
-                        <h3>Telephones:</h3>
-                        <p>+1 800 559 6580<br>+1 800 603 6035</p>
-                        <h3>Address 2:</h3>
-                        <p>The Company Name Inc.<br>9863 - 9867 Mill Road, Cambridge, MG09 99HT. </p>
+                        <h3>总公司地址:</h3>
+                        <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
+                        <h3>联系电话:</h3>
+                        <p>400-007-1818<br>+1 800 603 6035</p>
+                        <h3>分公司地址:</h3>
+                        <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8">
-                    <h2 class="wow fadeInRight">Contact form</h2>
+                    <h2 class="wow fadeInRight">在线留言</h2>
                     <form id="contact-form">
-                      <div class="contact-form-loader"></div>
-                      <fieldset>
-                        <label class="name form-div-1">
-                        <strong>Name*</strong>
-                          <input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters"  />
-                          <span class="empty-message">*This field is required.</span>
-                          <span class="error-message">*This is not a valid name.</span>
-                        </label>
-                        <label class="email form-div-2">
-                        <strong>E-mail*</strong>
-                          <input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-                          <span class="empty-message">*This field is required.</span>
-                          <span class="error-message">*This is not a valid email.</span>
-                        </label>
-                        <label class="phone form-div-3">
-                        <strong>Phone</strong>
-                          <input type="text" name="phone" placeholder="" value="" data-constraints="@JustNumbers" />
-                          <span class="empty-message">*This field is required.</span>
-                          <span class="error-message">*This is not a valid phone.</span>
-                        </label>
-                        <label class="message form-div-4">
-                        <strong>Message*</strong>
-                          <textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                          <span class="empty-message">*This field is required.</span>
-                          <span class="error-message">*The message is too short.</span>
-                        </label>
-                        <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
-                        <div class="btns">
-                            <a href="#" data-type="submit" class="btn-default btn1">submit</a>
-                            <p>* required fields</p>
-                        </div>
-                      </fieldset> 
-                      <div class="modal fade response-message">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                              <h4 class="modal-title">Modal title</h4>
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+                            <label class="name form-div-1">
+                                <strong>姓名*</strong>
+                                <input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters"  />
+                                <span class="empty-message">* 必填项目.</span>
+                                <span class="error-message">*输入错误，请再次输入.</span>
+                            </label>
+                            <label class="email form-div-2">
+                                <strong>邮箱*</strong>
+                                <input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
+                                <span class="empty-message">* 必填项目.</span>
+                                <span class="error-message">*输入错误，请再次输入.</span>
+                            </label>
+                            <label class="phone form-div-3">
+                                <strong>电话</strong>
+                                <input type="text" name="phone" placeholder="" value="" data-constraints="@JustNumbers" />
+                                <span class="empty-message">* 必填项目.</span>
+                                <span class="error-message">*输入错误，请再次输入.</span>
+                            </label>
+                            <label class="message form-div-4">
+                                <strong>留言*</strong>
+                                <textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                <span class="empty-message">* 必填项目.</span>
+                                <span class="error-message">*亲爱的用户，再说点什么吧......</span>
+                            </label>
+                            <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                            <div class="btns">
+                                <a href="#" data-type="submit" class="btn-default btn1">提交</a>
+                                <p>* 必填项目</p>
                             </div>
-                            <div class="modal-body">
-                              You message has been sent! We will be in touch soon.
-                            </div>      
-                          </div>
+                        </fieldset> 
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>      
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                </form>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <!--footer-->
+
 <footer> 
     <div class="container">
-        <p class="tel wow fadeInDown">+1 800 559 6580</p>
-        <p class="wow fadeInUp">Copyright &copy; <em id="copyright-year"></em> | <a href="index-6.html">Privacy Policy</a></p>
+        <p class="wow fadeInUp">版权所有 &copy; <em id="copyright-year"></em>腾逊科技 | 云服务商：<a href="#">智能云</a></p>
     </div>
 </footer>
 <script src="js/bootstrap.min.js"></script>
