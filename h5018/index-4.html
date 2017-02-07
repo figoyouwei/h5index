@@ -57,29 +57,25 @@
     <div class="container">
         <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
         <div class="box clearfix">
-            <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+             <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
                 <ul class="nav sf-menu clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="sub-menu"><a href="index-1.html">about us</a><span class="fa fa-angle-down"></span>
+                    <li><a href="index.html">首页</a></li>
+                    <li class="sub-menu"><a href="index-1.html">关于我们</a><span class="fa fa-angle-down"></span>
                         <ul class="submenu">
-            				<li><a href="#">Fermentum nisl</a></li>
-            				<li><a href="#">Mauris accumsan</a><span class="fa fa-angle-right"></span>
+                            <li><a href="#">研发团队</a></li>
+                            <li><a href="#">技术团队</a><span class="fa fa-angle-right"></span>
                                 <ul class="submenu">
-                                    <li><a href="#">Mauris accumsan</a></li>
-                                    <li><a href="#">Nulla vel diam</a></li>
-                                    <li><a href="#">Sed in lacus ut</a></li>
-                                    <li><a href="#">Enim adipiscing</a></li>
-                                    <li><a href="#">Fermentum nisl</a></li>
+                                    <li><a href="#">Java</a></li>
+                                    <li><a href="#">AngularJS</a></li>
+                                    <li><a href="#">Mathematica</a></li>
                                 </ul> 
                             </li>
-            				<li><a href="#">Nulla vel diam</a></li>
-                            <li><a href="#">Sed in lacus ut</a></li>
-                            <li><a href="#">Enim adipiscing</a></li>
-            			</ul>
+                            <li><a href="#">营销团队</a></li>
+                        </ul>
                     </li>
-                    <li><a href="index-2.html">services</a></li>
-                    <li><a href="index-3.html">gallery</a></li>
-                    <li class="active"><a href="index-4.html">contacts</a></li>
+                    <li><a href="index-2.html">云服务</a></li>
+                    <li><a href="index-3.html">精品案例</a></li>
+                    <li class="active"><a href="index-4.html">联系我们</a></li>
                 </ul>
             </nav>
             <ul class="follow_icon">
@@ -90,70 +86,71 @@
         </div>
     </div>
 </header>
+<!--content-->
 <div class="content">
     <div class="container">
         <section class="content_map indent wow zoomIn">
-              <div class="useso-map-api"> 
+            <div class="useso-map-api"> 
                 <div id="map-canvas" class="gmap"><iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe></div>
-              </div> 
+            </div> 
         </section>
     </div>
     <div class="thumb-box13">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h2 class="wow fadeIn">Get in Touch</h2>
+                    <h2 class="wow fadeIn">联系我们</h2>
                     <div class="info">
-                        <h4>Address 1:</h4>
-                        <p class="title">8901 Marmora Road, Glasgow, D04 89GR.</p>
-                        <p>Telephones:<br>+1 800 559 6580<br>+1 959 603 6035<br>+1 504 889 9898</p>
-                        <h4>Address 2:</h4>
-                        <p class="title">9867 Mill Road, Cambridge, MG09 99HT.</p>
+                        <h4>总公司地址:</h4>
+                        <p class="title">上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
+                        <p>联系电话:<br>400-007-1818<br>400-007-1818<br>400-007-1818</p>
+                        <h4>子公司地址:</h4>
+                        <p class="title">上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8">
-                    <h2 class="wow fadeIn" data-wow-delay="0.1s">Contact Form</h2>
-                     <form id="contact-form">
-                          <div class="contact-form-loader"></div>
-                          <fieldset>
+                    <h2 class="wow fadeIn" data-wow-delay="0.1s">在线留言</h2>
+                    <form id="contact-form">
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
                             <label class="name form-div-1">
-                              <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid name.</span>
+                                <input type="text" name="name" placeholder="姓名:" value="" data-constraints="@Required @JustLetters"  />
+                                <span class="empty-message">*必填项目</span>
+                                <span class="error-message">*输入错误，请再次输入</span>
                             </label>
                             <label class="email form-div-2">
-                              <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid email.</span>
+                                <input type="text" name="email" placeholder="邮箱:" value="" data-constraints="@Required @Email" />
+                                <span class="empty-message">*必填项目</span>
+                                <span class="error-message">*输入错误，请再次输入</span>
                             </label>
                             <label class="phone form-div-3">
-                              <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@JustNumbers" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid phone.</span>
+                                <input type="text" name="phone" placeholder="电话:" value="" data-constraints="@JustNumbers" />
+                                <span class="empty-message">*必填项目</span>
+                                <span class="error-message">*输入错误，请再次输入</span>
                             </label>
                             <label class="message form-div-4">
-                              <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*The message is too short.</span>
+                                <textarea name="message" placeholder="留言:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                <span class="empty-message">*必填项目</span>
+                                <span class="error-message">*亲爱的用户，再说点什么吧......</span>
                             </label>
                             <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
                             <div class="btns">
-                                <a href="#" data-type="submit" class="btn-default btn2">Submit</a>
+                                <a href="#" data-type="submit" class="btn-default btn2">提交</a>
                             </div>
-                          </fieldset> 
-                          <div class="modal fade response-message">
+                        </fieldset> 
+                        <div class="modal fade response-message">
                             <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                  <h4 class="modal-title">Modal title</h4>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>      
                                 </div>
-                                <div class="modal-body">
-                                  You message has been sent! We will be in touch soon.
-                                </div>      
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </form> 
                 </div>
             </div>
@@ -163,7 +160,7 @@
 <!--footer-->
 <footer> 
     <div class="container">
-        <p>Garden Pond Design &copy; <em id="copyright-year"></em> All Rights Reserved <span>|</span> <br><a href="index-5.html">Privacy Policy</a></p>
+        <p>版权所有 &copy; <em id="copyright-year"></em> 腾逊科技 <span>|云服务商</span> <br><a href="index-5.html">智能云</a></p>
     </div>
 </footer>
 <script src="js/bootstrap.min.js"></script>
