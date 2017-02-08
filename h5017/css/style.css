@@ -587,8 +587,10 @@ nav {
   padding-left: 92px;
   margin-bottom: 22px;
 }
+
 .post1 .label {
   text-align: center;
+  vertical-align: middle;
   font: 300 18px/23px "Oswald", sans-serif;
   color: #ffffff;
   background: #a1d169;
@@ -597,9 +599,11 @@ nav {
   border-radius: 300px;
   position: absolute;
   left: 0;
-  top: 4px;
-  padding-bottom: 15px !important;
+  top: 0px;
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
 }
+
 .post1.post1__inset1 .label {
   background: #ef8174;
 }
