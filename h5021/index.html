@@ -18,11 +18,11 @@
     <script src="js/jquery.mobile.customized.min.js"></script>
     <script src="js/wow.js"></script>
     <script>
-        $(document).ready(function () {
-            if ($('html').hasClass('desktop')) {
-                new WOW().init();
-            }
-        });
+    $(document).ready(function () {
+        if ($('html').hasClass('desktop')) {
+            new WOW().init();
+        }
+    });
     </script>
     <!--<![endif]-->
     <script src="js/camera.js"></script>
@@ -30,172 +30,169 @@
     <script src="js/easyResponsiveTabs.js"></script>
     <script src="js/touchTouch.js"></script>
 
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-    <![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+<![endif]-->
 <style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
 
 <body>
 
-    <div class="page">
-        <!--========================================================
-                                  HEADER
-        =========================================================-->
-        <header id="header">
-            <div class="wrap">
-                <div class="container">
-                    <div class="row">
-                        <div class="grid_12">
-                            <div id="stuck_container">
-                                <div class="substrate bg2"></div>
-                                <div class="brand">
-                                    <h1>
-                                        <a href="index.html">
-                                            <img src="images/logo.png">
-                                        </a>
-                                    </h1>
-                                </div>
-                                <nav class="nav">
-                                    <ul class="sf-menu">
-                                        <li class="active"><a href="index.html">Home</a></li>
+<div class="page">
+
+<!--HEADER-->
+
+<header id="header">
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div id="stuck_container">
+                        <div class="substrate bg2"></div>
+                        <div class="brand">
+                            <h1>
+                                <a href="index.html">
+                                    <img src="images/logo.png">
+                                </a>
+                            </h1>
+                        </div>
+                        <nav class="nav">
+                            <ul class="sf-menu">
+                                <li class="active"><a href="index.html">首页</a></li>
+                                <li>
+                                    <a href="index-1.html">关于我们</a>
+                                    <ul>
+                                        <li><a href="#">研发团队</a></li>
                                         <li>
-                                            <a href="index-1.html">About Us</a>
+                                            <a href="#">技术团队</a>
                                             <ul>
-                                                <li><a href="#">Clients</a></li>
-                                                <li>
-                                                    <a href="#">History</a>
-                                                    <ul>
-                                                        <li><a href="#">Nam liber</a></li>
-                                                        <li><a href="#">Duisautem</a></li>
-                                                        <li><a href="#">Eodemo</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Archive</a></li>
+                                                <li><a href="#">Java</a></li>
+                                                <li><a href="#">AngularJS</a></li>
+                                                <li><a href="#">Mathematica</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="index-2.html">Properties</a></li>
-                                        <li><a href="index-3.html">News</a></li>
-                                        <li><a href="index-4.html">Services</a></li>
-                                        <li><a href="index-5.html">Contacts</a></li>
+                                        <li><a href="#">营销团队</a></li>
                                     </ul>
-                                </nav>
-                            </div>
-                        </div>
+                                </li>
+                                <li><a href="index-2.html">云服务</a></li>
+                                <li><a href="index-3.html">公司动态</a></li>
+                                <li><a href="index-4.html">建站服务</a></li>
+                                <li><a href="index-5.html">联系我们</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
 
 
-            <div id="camera" class="camera-wrap">
-                <div data-src="images/index_slide01.jpg"></div>
-                <div data-src="images/index_slide02.jpg"></div>
-                <div data-src="images/index_slide03.jpg"></div>
+    <div id="camera" class="camera-wrap">
+        <div data-src="images/index_slide01.jpg"></div>
+        <div data-src="images/index_slide02.jpg"></div>
+        <div data-src="images/index_slide03.jpg"></div>
+    </div>
+
+</header>
+
+<!--CONTENT-->
+
+<section id="content">
+
+    <div class="container">
+        <div class="well__ins4">
+            <div class="row">
+                <div class="grid_12 wow fadeInLeft">
+                    <h2 class="hdng">
+                        <span>腾逊科技</span>
+                        About us
+                    </h2>
+                </div>
             </div>
-
-        </header>
-        <!--========================================================
-                                  CONTENT
-        =========================================================-->
-        <section id="content">
-
-            <div class="container">
-                <div class="well__ins4">
-                    <div class="row">
-                        <div class="grid_12 wow fadeInLeft">
-                            <h2 class="hdng">
-                                <span>Company info</span>
-                                About us
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="grid_4 wow fadeInLeft" data-wow-delay=".2s">
-                            <div class="box1">
-                                <h3><a href="#">Dolor in hendrerit in vulputate </a></h3>
-                                <p>
-                                    Duis autem vel eum iriure dolor in
-                                    hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-                                    <a href="#">more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="grid_4 wow fadeInLeft" data-wow-delay=".4s">
-                            <div class="box1">
-                                <h3><a href="#">Typi non habent claritatem insita</a></h3>
-                                <p>
-                                    Claritas est etiam  vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-                                    <a href="#">more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="grid_4 wow fadeInLeft" data-wow-delay=".6s">
-                            <div class="box1">
-                                <h3><a href="#">Claritas est etiam drerit in </a></h3>
-                                <p>
-                                    Ut wisi enim ad minim eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-                                    <a href="#">more</a>
-                                </p>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="grid_4 wow fadeInLeft" data-wow-delay=".2s">
+                    <div class="box1">
+                        <h3><a href="#">永远领先一步 </a></h3>
+                        <p>
+                            与传统的网站制作流程相比，我们的自助建站云系统可以让使用者根据市场的变化随时更新内容信息，摆脱对建站公司技术和人员的依赖。此外，大陆的备案制上线流程周期较长，我们提供即可上线的功能，让您在前端永远比竞争对手领先一步
+                            <a href="#">更多详情</a>
+                        </p>
                     </div>
                 </div>
-
-                <div class="well__ins5">
-                    <div class="row">
-                        <div class="grid_12 wow fadeInLeft">
-                            <h2 class="hdng__off2">
-                                <span>our proposals</span>
-                                featured properties
-                            </h2>
-                        </div>
+                <div class="grid_4 wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="box1">
+                        <h3><a href="#">激情拥抱蜕变</a></h3>
+                        <p>
+                            在这个唯有变化才是永恒不变的时代，一成不变注定会使客户失去新鲜感从而导致粘合度下降。我们的云平台提供海量国际顶尖设计师的前端理念，让您网站的每一次变化高雅而不失端庄，惊喜而不失熟悉的味道，用最低成本实现最惊艳的蜕变
+                            <a href="#">更多详情</a>
+                        </p>
                     </div>
-                    <div class="row">
-                        <div class="grid_12">
-                            <div id="tabs" class="resp-tabs wow fadeInLeft">
+                </div>
+                <div class="grid_4 wow fadeInLeft" data-wow-delay=".6s">
+                    <div class="box1">
+                        <h3><a href="#">趋势个人电商</a></h3>
+                        <p>
+                            平台电商时代已经是过去式，这个时代造就了淘宝和京东等互联网商业巨头。个人电商时代是正在进行时，我们的建站云系统提供当下最潮流的个人电商平台，让您摆脱对平台电商恶性排名的依赖，在互联网的海洋里打造全新的商业品牌
+                            <a href="#">更多详情</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                <div class="resp-tabs-container">
-                                    <div>
-                                        <div class="row">
-                                            <div class="grid_6 wow fadeInRight" data-wow-delay=".2s">
-                                                <div class="box2 ta__c">
-                                                    <a href="images/index_img01_big.jpg" data-type="lightbox">
-                                                        <img src="images/index_img01.jpg" alt="Image 1" />
-                                                    </a>
-                                                    <h3><a href="#">Dolor in hendrerit </a></h3>
-                                                    <p>Option congue nihil imperdiet doming id </p>
-                                                </div>
-                                            </div>
-                                            <div class="grid_6 wow fadeInRight" data-wow-delay=".4s">
-                                                <div class="box2 ta__c">
-                                                    <a href="images/index_img02_big.jpg" data-type="lightbox">
-                                                        <img src="images/index_img02.jpg" alt="Image 2" />
-                                                    </a>
-                                                    <h3><a href="#">Feugiat nulla facilisis</a></h3>
-                                                    <p>Ge hendrerit in vulputate velit esse mol</p>
-                                                </div>
-                                            </div>
+        <div class="well__ins5">
+            <div class="row">
+                <div class="grid_12 wow fadeInLeft">
+                    <h2 class="hdng__off2">
+                        <span>精品案例展示</span>
+                        客户风采
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_12">
+                    <div id="tabs" class="resp-tabs wow fadeInLeft">
+
+                        <div class="resp-tabs-container">
+                            <div>
+                                <div class="row">
+                                    <div class="grid_6 wow fadeInRight" data-wow-delay=".2s">
+                                        <div class="box2 ta__c">
+                                            <a href="images/index_img01_big.jpg" data-type="lightbox">
+                                                <img src="images/index_img01.jpg" alt="Image 1" />
+                                            </a>
+                                            <h3><a href="#">乐享尊货 品质生活</a></h3>
+                                            <p>参考模板:6003 </p>
                                         </div>
-                                        <div class="row">
-                                            <div class="grid_6 wow fadeInLeft" data-wow-delay=".6s">
-                                                <div class="box2 ta__c">
-                                                    <a href="images/index_img03_big.jpg" data-type="lightbox">
-                                                        <img src="images/index_img03.jpg" alt="Image 3" />
-                                                    </a>
-                                                    <h3><a href="#">Littera gothe</a></h3>
-                                                    <p>Vulputate velit esse molestie consequa</p>
-                                                </div>
-                                            </div>
-                                            <div class="grid_6 wow fadeInLeft" data-wow-delay=".8s">
-                                                <div class="box2 ta__c">
-                                                    <a href="images/index_img04_big.jpg" data-type="lightbox">
-                                                        <img src="images/index_img04.jpg" alt="Image 4" />
-                                                    </a>
-                                                    <h3><a href="#">Claritas est etiam</a></h3>
-                                                    <p>Derit in vulputate velit esse mo </p>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="grid_6 wow fadeInRight" data-wow-delay=".4s">
+                                        <div class="box2 ta__c">
+                                            <a href="images/index_img02_big.jpg" data-type="lightbox">
+                                                <img src="images/index_img02.jpg" alt="Image 2" />
+                                            </a>
+                                            <h3><a href="#">现代简约 古典奢华</a></h3>
+                                            <p>参考模板:5023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="grid_6 wow fadeInLeft" data-wow-delay=".6s">
+                                        <div class="box2 ta__c">
+                                            <a href="images/index_img03_big.jpg" data-type="lightbox">
+                                                <img src="images/index_img03.jpg" alt="Image 3" />
+                                            </a>
+                                            <h3><a href="#">探索价值 打磨精品</a></h3>
+                                            <p>参考模板:5022</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid_6 wow fadeInLeft" data-wow-delay=".8s">
+                                        <div class="box2 ta__c">
+                                            <a href="images/index_img04_big.jpg" data-type="lightbox">
+                                                <img src="images/index_img04.jpg" alt="Image 4" />
+                                            </a>
+                                            <h3><a href="#">一心一意 见证爱情</a></h3>
+                                            <p>参考模板:5003</p>
                                         </div>
                                     </div>
                                 </div>
@@ -203,97 +200,91 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="row  well well__ins5">
-                    <div class="grid_12">
-                        <h2 class="hdng wow fadeInLeft" data-wow-delay=".2s">
-                            <span>hot topics</span>
-                            Latest news
-                        </h2>
+        <div class="row  well well__ins5">
+            <div class="grid_12">
+                <h2 class="hdng wow fadeInLeft" data-wow-delay=".2s">
+                    <span>关注我们</span>
+                    最新动态
+                </h2>
 
-                        <div class="news  wow fadeInLeft" data-wow-delay=".4s">
-                            <div class="news_aside-l">
-                                <a href="#" class="btn2"><time datetime="2014-01-01">21 / 05 / 2014</time></a>
-                            </div>
+                <div class="news  wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="news_aside-l">
+                        <a href="#" class="btn2"><time datetime="2014-01-01">21 / 05 / 2014</time></a>
+                    </div>
 
-                            <div class="news_aside-r">
-                                <p><a href="#">read more</a></p>
-                            </div>
+                    <div class="news_aside-r">
+                        <p><a href="#">了解更多</a></p>
+                    </div>
 
-                            <div class="news_cnt">
-                                <h3><a href="#">Hendrerit in vulputate olestie consequat, vel </a></h3>
-                                <p>
-                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="news wow fadeInLeft" data-wow-delay=".6s">
-                            <div class="news_aside-l">
-                                <a href="#" class="btn2"><time datetime="2014-01-01">13 / 06 / 2014</time></a>
-                            </div>
-
-                            <div class="news_aside-r">
-                                <p><a href="#">read more</a></p>
-                            </div>
-
-                            <div class="news_cnt">
-                                <h3><a href="#">Dolor in hendrerit in vulputate </a></h3>
-                                <p>
-                                    Typi non habent claritatem insitam; esr in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="news wow fadeInLeft" data-wow-delay=".8s">
-                            <div class="news_aside-l">
-                                <a href="#" class="btn2"><time datetime="2014-01-01">17 / 07 / 2014</time></a>
-                            </div>
-
-                            <div class="news_aside-r">
-                                <p><a href="#">read more</a></p>
-                            </div>
-
-                            <div class="news_cnt">
-                                <h3><a href="#">Typi non habent claritatem</a></h3>
-                                <p>
-                                    Vl eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum do lore eu feugiat nulla facilisis at veon habent claritatem insitam; esmsan et
-                                </p>
-                            </div>
-                        </div>
+                    <div class="news_cnt">
+                        <h3><a href="#">入驻腾讯云服务市场</a></h3>
+                        <p>
+                           公司与腾讯云签订服务市场双边合作协议，成为其在上海唯一的建站服务战略伙伴，为我们的用户提供个性化的云服务......
+                        </p>
                     </div>
                 </div>
-            </div>
 
-        </section>
+                <div class="news wow fadeInLeft" data-wow-delay=".6s">
+                    <div class="news_aside-l">
+                        <a href="#" class="btn2"><time datetime="2014-01-01">13 / 06 / 2014</time></a>
+                    </div>
 
-        <!--========================================================
-                                  FOOTER
-        =========================================================-->
-        <footer id="footer">
-            <div class="container ta__c well__ins2">
-                <div class="row">
-                    <div class="grid_12">
-                        <ul class="socials">
-                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-                        </ul>
-                        <p class="info">
-                            <a href="index.html" class="company">Apartment for rent</a> <br />
+                    <div class="news_aside-r">
+                        <p><a href="#">了解更多</a></p>
+                    </div>
 
-                            Copyright ©
-                            <span id="copyright-year"></span>
-                            |
-                            <a href="index-6.html">Privacy Policy</a>
-                            <!-- {%FOOTER_LINK} -->
+                    <div class="news_cnt">
+                        <h3><a href="#">定制世界蜂业巨擘中文区官网 </a></h3>
+                        <p>
+                            我们公司与ICING中国区品牌管理公司合作，为其度身定制了中文官方网站，为其打造了蜂业巨擘在中国品牌建设的前沿阵地......
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news wow fadeInLeft" data-wow-delay=".8s">
+                    <div class="news_aside-l">
+                        <a href="#" class="btn2"><time datetime="2014-01-01">17 / 07 / 2014</time></a>
+                    </div>
+
+                    <div class="news_aside-r">
+                        <p><a href="#">了解更多</a></p>
+                    </div>
+
+                    <div class="news_cnt">
+                        <h3><a href="#">合作嘉定育成中心</a></h3>
+                        <p>
+                            我们公司与中国科学院上海嘉定育成中心签订双边合作协议，成为育成中心官方推荐的建站服务商，我们的服务将进一步助力园区内初创企业在云端腾飞......
                         </p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
 
-    <script src="js/script.js"></script>
+</section>
+
+<!--FOOTER-->
+
+<footer id="footer">
+    <div class="container ta__c well__ins2">
+        <div class="row">
+            <div class="grid_12">
+                <p class="info">
+                    <a href="index.html" class="company">欢迎加入腾逊科技</a> <br />版权所有 ©
+                    <span id="copyright-year"></span>腾逊科技 | 云服务商：
+                    <a href="#">智能云</a>
+                    <!-- {%FOOTER_LINK} -->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="js/script.js"></script>
 <script type="text/javascript" src="../../include.js"></script>
 </body>
 </html>

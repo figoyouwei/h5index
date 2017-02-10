@@ -56,22 +56,22 @@ $(document).ready(function () {
         <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
         <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
             <ul class="nav sf-menu clearfix">
-                <li class="sub-menu"><a href="index.html">Home</a><span></span>
+                <li class="sub-menu"><a href="index.html">首页</a><span></span>
                     <ul class="submenu">
-        				<li><a href="#">About</a><span></span>
+                <li><a href="#">企业简介</a><span></span>
                           <ul class="submenu">
-                                <li><a href="#">Fresh</a></li>
-                                <li><a href="#">Archive</a></li>
+                                <li><a href="#">团队介绍</a></li>
+                                <li><a href="#">企业文化</a></li>
                           </ul>  
                         </li>
-        				<li><a href="#">History</a></li>
-                        <li><a href="#">News</a></li>
-        			</ul>
+                <li><a href="#">公司动态</a></li>
+                        <li><a href="#">人才招聘</a></li>
+              </ul>
                 </li>
-                <li><a href="index-1.html">Company</a></li>
-                <li><a href="index-2.html">Services</a></li>
-                <li><a href="index-3.html">Solutions</a></li>
-                <li class="active"><a href="index-4.html">Contacts</a></li>
+                <li><a href="index-1.html">关于我们</a></li>
+                <li><a href="index-2.html">云服务</a></li>
+                <li><a href="index-3.html">最新资讯</a></li>
+                <li class="active"><a href="index-4.html">联系我们</a></li>
             </ul>
         </nav>
     </div>
@@ -79,7 +79,7 @@ $(document).ready(function () {
 <!--content-->
 <div class="global indent">
     <div class="container">
-        <h2>contact us <strong><span></span></strong></h2>
+        <h2>联系我们 <strong><span></span></strong></h2>
         <div class="map">
             <iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
         </div>
@@ -88,47 +88,47 @@ $(document).ready(function () {
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInLeft">
-                    <h2>addresses <strong><span></span></strong></h2>
+                    <h2>欢迎前来洽谈<strong><span></span></strong></h2>
                     <div class="info">
-                        <h3>address 1</h3>
-                        <p>The Company Name Inc.<br>8901 Marmora Road, Glasgow, D04 89GR.</p>
+                        <h3>总公司地址：</h3>
+                        <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
                         
-                        <h3>telephones</h3>
-                        <p>+1 800 559 6580<br>+1 959 603 6035</p>
+                        <h3>咨询热线：</h3>
+                        <p>400-007-1818<br>400-007-1818</p>
                         
-                        <h3>address 2</h3>
-                        <p>The Company Name Inc.<br>9863 - 9867 Mill Road, Cambridge, MG09 99HT</p>
+                        <h3>分公司地址：</h3>
+                        <p>上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦</p>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8 wow fadeInRight">
-                    <h2>contact form <strong><span></span></strong></h2>
+                    <h2>在线留言<strong><span></span></strong></h2>
                     <form id="contact-form">
                           <div class="contact-form-loader"></div>
                           <fieldset>
                             <label class="name form-div-1">
-                              <input type="text" name="name" placeholder="Name*" value="" data-constraints="@Required @JustLetters"  />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid name.</span>
+                              <input type="text" name="name" placeholder="姓名*" value="" data-constraints="@Required @JustLetters"  />
+                              <span class="empty-message">*必填项目.</span>
+                              <span class="error-message">*输入错误，请再次输入.</span>
                             </label>
                             <label class="email form-div-2">
-                              <input type="text" name="email" placeholder="E-mail*" value="" data-constraints="@Required @Email" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid email.</span>
+                              <input type="text" name="email" placeholder="邮箱*" value="" data-constraints="@Required @Email" />
+                              <span class="empty-message">*必填项目.</span>
+                              <span class="error-message">*输入错误，请再次输入.</span>
                             </label>
                             <label class="phone form-div-3">
-                              <input type="text" name="phone" placeholder="Phone" value="" data-constraints="@JustNumbers" />
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*This is not a valid phone.</span>
+                              <input type="text" name="phone" placeholder="电话" value="" data-constraints="@JustNumbers" />
+                              <span class="empty-message">*必填项目.</span>
+                              <span class="error-message">*输入错误，请再次输入.</span>
                             </label>
                             <label class="message form-div-4">
-                              <textarea name="message" placeholder="Comments*" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                              <span class="empty-message">*This field is required.</span>
-                              <span class="error-message">*The message is too short.</span>
+                              <textarea name="message" placeholder="留言*" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                              <span class="empty-message">*必填项目.</span>
+                              <span class="error-message">*亲爱的用户，再说点什么吧......</span>
                             </label>
                             <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
                             <div>
-                              <a href="#" data-type="submit" class="btn-default btn1 form-btns">submit</a>
-                              <p>*Required Fields</p>
+                              <a href="#" data-type="submit" class="btn-default btn1 form-btns">提交</a>
+                              <p>*必填项目</p>
                             </div>
                           </fieldset> 
                           <div class="modal fade response-message">
@@ -153,12 +153,9 @@ $(document).ready(function () {
 <!--footer-->
 <footer>
     <div class="container">
-        <p>accountant &copy; <em id="copyright-year"></em> <span>|</span> <br><a href="index-5.html">Privacy policy</a></p>
-        <ul style="float:right;margin-top:10px;">
-            <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-        </ul>
+        <p>版权所有 &copy; <em id="copyright-year"></em> <span>腾逊科技 | 云服务商：</span> <br><a href="#">智能云</a></p>
     </div>
+  <!-- {%FOOTER_LINK} -->
 </footer>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/tm-scripts.js"></script>
