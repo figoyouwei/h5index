@@ -18,41 +18,41 @@
 <link rel="stylesheet" href="css/contact-form.css" media="screen">
 </head>
 <body id="top">
-	<!--========================================================
-                            HEADER 
-  =========================================================-->
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="grid_12">
-					<h1>
-						<a href="index.html"><img src="images/logo.png" alt=""></a>
-					</h1>
-				</div>
-				<div class="grid_12">
-					<nav>
+
+	<!-- HEADER -->
+
+<header id="header">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12">
+				<h1>
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</h1>
+			</div>
+			<div class="grid_12">
+				<nav>
 						<ul class="sf-menu">
-							<li><a href="index.html">Home</a>
+							<li><a href="index.html">首页</a>
 								<ul>
-									<li><a href="#">About</a></li>
-									<li><a href="#">History</a></li>
-									<li><a href="#">News</a>
+									<li><a href="#">公司文化</a></li>
+									<li><a href="#">服务介绍</a></li>
+									<li><a href="#">建站指南</a>
 										<ul>
-											<li><a href="#">Fresh</a></li>
-											<li><a href="#">Archive</a></li>
+											<li><a href="#">建站流程</a></li>
+											<li><a href="#">建站模板</a></li>
 										</ul></li>
 								</ul></li>
-							<li><a href="index-1.html">About</a></li>
-							<li><a href="index-2.html">Services</a></li>
-							<li><a href="index-3.html">Blog</a></li>
-							<li class="current"><a href="index-4.html">Contact</a></li>
+							<li><a href="index-1.html">关于我们</a></li>
+							<li><a href="index-2.html">云服务</a></li>
+							<li><a href="index-3.html">最新动态</a></li>
+							<li class="current"><a href="index-4.html">联系我们</a></li>
 						</ul>
 					</nav>
-				</div>
 			</div>
 		</div>
-	</header>
-	<div class="clear"></div>
+	</div>
+</header>
+<div class="clear"></div>
 	<!--========================================================
                             CONTENT
   =========================================================-->
@@ -61,7 +61,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="grid_12">
-						<h2 class="center">contact us</h2>
+						<h2 class="center">联系我们</h2>
 						<div class="">
 							<iframe class="map_c"
 								src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094"
@@ -75,30 +75,28 @@
 				<div class="row">
 					<div class="grid_4 wrap">
 						<div class="box">
-							<h3>address 1</h3>
+							<h3>总公司地址：</h3>
 							<address class="address1">
 								<p>
-									The Company Name Inc. <br>8901 Marmora Road, Glasgow, D04
-									89GR.
+								上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦
 								</p>
 							</address>
 						</div>
 					</div>
 					<div class="grid_4 wrap">
 						<div class="box">
-							<h3>telephones</h3>
+							<h3>咨询热线：</h3>
 							<address class="address1">
-								<p>+1 800 559 6580</p>
+								<p>400-007-1818</p>
 							</address>
 						</div>
 					</div>
 					<div class="grid_4">
 						<div class="box">
-							<h3>address 2</h3>
+							<h3>分公司地址：</h3>
 							<address class="address1">
 								<p>
-									The Company Name Inc. <br>9863 - 9867 Mill Road,
-									Cambridge, MG09 99HT
+									上海浦东新区陆家嘴<br>花园石桥路33号花旗集团大厦
 								</p>
 							</address>
 						</div>
@@ -110,49 +108,47 @@
 			<div class="container">
 				<div class="row">
 					<div class="grid_12">
-						<h2 class="center">Contact form</h2>
+						<h2 class="center">在线留言</h2>
 						<br>
 						<form id="contact-form">
 							<div class="contact-form-loader"></div>
 							<fieldset>
 								<div class="grid_4 alpha">
 									<label class="name"> <input type="text" name="name"
-										placeholder="Name*" value=""
+										placeholder="姓名*" value=""
 										data-constraints="@Required @JustLetters"> <span
-										class="empty-message">*This field is required.</span> <span
-										class="error-message">*This is not a valid name.</span>
+										class="empty-message">*必填项目</span> <span
+										class="error-message">*必填项目</span>
 									</label>
 								</div>
 								<div class="grid_4">
 									<label class="email"> <input type="text" name="email"
-										placeholder="Email*" value=""
+										placeholder="电子邮件*" value=""
 										data-constraints="@Required @Email"> <span
-										class="empty-message">*This field is required.</span> <span
-										class="error-message">*This is not a valid email.</span>
+										class="empty-message">*必填项目</span> <span
+										class="error-message">*输入错误，请再次输入</span>
 									</label>
 								</div>
 								<div class="grid_4 omega">
 									<label class="phone"> <input type="text" name="phone"
-										placeholder="Phone" value=""
+										placeholder="电话" value=""
 										data-constraints="@Required @JustNumbers"> <span
-										class="empty-message">*This field is required.</span> <span
-										class="error-message">*This is not a valid phone.</span>
+										class="empty-message">*必填项目</span> <span
+										class="error-message">*输入错误，请再次输入</span>
 									</label>
 								</div>
 								<div class="clear"></div>
 								<div class="grid_12 alpha">
 									<label class="message"> <textarea name="message"
-											placeholder="Comments*"
+											placeholder="留言*"
 											data-constraints="@Required @Length(min=20,max=999999)">
-                                    </textarea> <span class="empty-message">*This
-											field is required.</span> <span class="error-message">*The
-											message is too short.</span>
+                                    </textarea> <span class="empty-message">*必填项目</span> <span class="error-message">*亲爱的用户，再说点什么吧......</span>
 									</label>
 								</div>
 								<!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
 								<div class="btns">
-									<a href="#" class="link" data-type="reset">clear</a> <a
-										href="#" class="link" data-type="submit">send</a>
+									<a href="#" class="link" data-type="reset">重新</a> <a
+										href="#" class="link" data-type="submit">发送</a>
 								</div>
 							</fieldset>
 							<div class="modal fade response-message">
@@ -182,8 +178,9 @@
 			<div class="row">
 				<div class="grid_12">
 					<div class="copy">
-						<span>Taxi Services (c)</span> <span id="copyright-year"></span> <span>&nbsp;|&nbsp;</span>
-						<span><a href="index-5.html">Privacy Policy</a></span>
+						<span>版权所有 © </span> <span id="copyright-year"></span> <span>腾逊科技 | 云服务商：</span>
+						<span><a href="#">智能云</a></span>
+						<!--{%FOOTER_LINK} -->
 					</div>
 				</div>
 			</div>
