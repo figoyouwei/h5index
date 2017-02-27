@@ -1,0 +1,26 @@
+
+
+#toTop,
+.circle,
+.numb,
+.numb1,
+.socials li a,
+.capture { behavior:url(../images/PIE.htc); }
+
+#toTop { 
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';
+}
+.capture span,
+.capture a {
+	top: -30px;
+	position: absolute;
+}
+
+
+
+/* Contact Form Processing Box
+========================================================*/
+
+#contact-form .contact-form-loader { display: none;}
+#contact-form.processing .contact-form-loader {display: block;}
+
