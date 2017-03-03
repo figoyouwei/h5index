@@ -1,0 +1,249 @@
+/*----------------------------
+	Thumbnails
+-----------------------------*/
+
+.block {
+	position: relative;
+	margin: 7px 0 0;
+	overflow: hidden;
+	text-align: left;
+}
+
+.block a.magnifier {
+	width:100%;
+	display:inline-block;
+	position:relative;
+	text-decoration:none;
+	z-index: 100;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+.capture1 {
+	position: relative;
+	padding: 15px 0 17px;
+	background: none;
+	color: #6e6e6e;
+
+	transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.capture1 a {
+	font-size: 14px;
+	line-height: 14px;
+	color: #cd534d;
+	display: inline;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.capture1 .time {margin-top: 4px;}
+
+.capture1 time,
+.capture1 .time a {
+	font-size: 12px;
+	color: #6e6e6e;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.capture1 .time a:hover {color: #cd534d;}
+.capture1 a:hover {color: #000;}
+
+
+/* The gallery overlay */
+
+#galleryOverlay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	opacity:0;
+	z-index:100000;
+	background-color:#f04b2a;
+	background-color:rgba(0,0,0,0.8);
+	overflow:hidden;
+	display:none;
+	
+	-moz-transition:opacity 1s ease;
+	-webkit-transition:opacity 1s ease;
+	transition:opacity 1s ease;
+}
+
+/* This class will trigger the animation */
+
+#galleryOverlay.visible{
+	opacity:1;
+}
+
+#gallerySlider{
+	height:100%;
+	left:0;
+	top:0;
+	width:100%;
+	white-space: nowrap;
+	position:absolute;
+	
+	-moz-transition:left 0.4s ease;
+	-webkit-transition:left 0.4s ease;
+	transition:left 0.4s ease;
+}
+
+#gallerySlider .placeholder{
+	background: url("../images/preloader.gif") no-repeat center center;
+	height: 100%;
+	line-height: 1px;
+	text-align: center;
+	width:100%;
+	display:inline-block;
+}
+
+/* The before element moves the
+ * image halfway from the top */
+
+#gallerySlider .placeholder:before{
+	content: "";
+	display: inline-block;
+	height: 50%;
+	width: 1px;
+	margin-right:-1px;
+}
+
+#gallerySlider .placeholder img{
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+#gallerySlider.rightSpring{
+	-moz-animation: rightSpring 0.3s;
+	-webkit-animation: rightSpring 0.3s;
+}
+
+#gallerySlider.leftSpring{
+	-moz-animation: leftSpring 0.3s;
+	-webkit-animation: leftSpring 0.3s;
+}
+
+/* Firefox Keyframe Animations */
+
+@-moz-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-moz-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Safari and Chrome Keyframe Animations */
+
+@-webkit-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-webkit-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Arrows */
+
+#prevArrow,#nextArrow{
+	border:none;
+	text-decoration:none;
+	background:url('../images/arrows.png') no-repeat;
+	opacity:0.5;
+	cursor:pointer;
+	position:absolute;
+	width:43px;
+	height:58px;
+	
+	top:50%;
+	margin-top:-29px;
+	
+	-moz-transition:opacity 0.2s ease;
+	-webkit-transition:opacity 0.2s ease;
+	transition:opacity 0.2s ease;
+}
+
+#prevArrow:hover, #nextArrow:hover{
+	opacity:1;
+}
+
+#prevArrow{
+	background-position:left top;
+	left:40px;
+}
+
+#nextArrow{
+	background-position:right top;
+	right:40px;
+}
+
+a.magnifier {
+    background: #f04b2a url(../images/img_hover.png) 0 0 no-repeat;
+    display: block;
+    
+    background-position:center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+a.magnifier img {
+	width: 100%;
+	position: relative;
+	display: block;
+	-webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+    -webkit-box-shadow: 0 0 #fff;
+    -moz-box-shadow: 0 0 #fff;
+    -ms-box-shadow: 0 0 #fff;
+    -o-box-shadow: 0 0 #fff;
+    box-shadow: 0 0 #fff;
+}
+
+a.magnifier:hover img {
+    opacity: .5;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+}
+
+/*----------------------------
+	Media Queries
+-----------------------------*/
+
+@media screen and (max-width: 1199px) {
+	
+	.capture1 a {font-size: 13px;}
+
+	.thumbs a.various {width: 100%;}
+}
+
+@media screen and (max-width: 960px) {
+	.thumb {
+		width:auto;
+	}
+
+}
+@media screen and (max-width: 960px) {
+
+	.block {padding: 0 10px;}
+}
+

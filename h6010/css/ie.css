@@ -1,0 +1,29 @@
+
+.owl-theme .owl-controls .owl-page span,
+#toTop,
+.thumb1 div,
+.box span,
+.social-links li a { behavior:url(../images/PIE.htc); }
+
+#form .invalid .error-message, 
+#form .empty .empty-message { display: block; }
+
+#form .error-message,
+#form .empty-message { display: none; }
+
+.social-links li a:hover i,
+.social-links1 li a:hover i {line-height: 10px;}
+
+.sf-menu li ul li ul {left: 150px;}
+.sf-menu li ul {top: 66px;}
+
+a.magnifier {background: #cd534d url(../images/img_hover.png) center center no-repeat;}
+
+.thumbs1 a.various img {cursor: pointer;}
+
+#search input {padding-top: 9px;height: 28px;}
+
+#toTop {border-radius: 500px;border: 1px solid #b9b9bd;}
+
+#toTop:hover {border: 1px solid #bfbfbf;}
+

@@ -1,0 +1,246 @@
+
+.bottom_menu {margin: 31px 0 0;}
+
+.bottom_menu {text-align: left;}
+.bottom_menu > li {float: left;}
+.bottom_menu > li + li {margin-left: 16px;}
+
+.bottom_menu > li > a {
+	text-transform: capitalize;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Lato';
+	color: #707070;
+}
+
+.bottom_menu > li > a:hover,
+.bottom_menu > li.current a {color: #c53832;}
+
+nav>.sf-menu {
+	z-index: 990;
+	text-align: right;
+	position: relative;
+	padding-right: 12px;
+}
+
+nav { 
+	position:relative;
+	padding: 0;
+	margin-top: 43px;
+}
+
+.sf-menu ul { 
+	position:absolute; 
+	top:-999px; 
+	display:none;
+	padding: 12px 0 22px;
+}
+
+.sf-menu li {
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	padding: 0;
+	line-height: 31px;
+}
+
+.sf-menu>li+li {margin-left: 20px;}
+
+.sf-menu>li+li:after {
+
+}
+
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+}
+
+.sf-menu>li>a{
+	display: block;
+	text-align: left;
+	position: relative;
+	color: #5b5b5b;
+	font: 400 14px/21px 'Asap', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0;
+	letter-spacing: 0;
+}
+
+
+.sf-menu>li>a:hover,
+.sf-menu>li.current>a{
+	position: relative;
+	text-decoration: none;
+	color: #c53832;
+}
+
+.sf-menu>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 30%;
+	top: 44px;
+	width: 17px;
+	height: 6px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li.current>a.sf-with-ul:after {
+
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+	position: absolute;
+	display: none;
+	width: 7px;
+	height: 6px;
+	right: 20px;
+	bottom: 11px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+
+/*================================>> 2 Level <<========================================*/
+
+.sf-menu li ul {
+	position: absolute;
+	z-index: 999;
+	top: 65px;
+	left: -63px;
+	padding: 13px 0 26px;
+	width: 175px;
+	text-align: center;
+	background: #298aae;
+}
+
+.sf-menu li ul li{
+	position: relative;
+	text-align: left;
+	float: none !important;
+	padding: 0;
+	margin: 4px 0 0px;
+	cursor: default;
+	display: inline-block;
+}
+
+
+.sf-menu li ul li a{
+	position: relative;
+	text-transform: none;
+	z-index: 999;
+	display: inline;
+	color: #ffffff;
+	font: normal 12px/17px Arial;
+	text-decoration: none;
+	letter-spacing: -.4px;
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	right: -18px;
+	width: 8px;
+	height: 7px;
+	top: 5px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu li li a:hover {  
+	color: #000;
+	text-decoration: none;
+}
+
+/*================================>> 3 Level <<========================================*/
+
+.sf-menu li ul li ul{
+	position: absolute;
+	left: 148px;
+	top: -16px;
+	background: #ffffff;
+	padding: 13px 0 26px;
+	width: 176px;
+}
+
+.sf-menu li li ul li {
+	padding: 0;
+	margin: 4px 0 0;
+}
+
+.sf-menu li li ul li a {
+	color: #000;
+	padding: 0;	
+}
+
+.sf-menu li li ul li a:hover {
+	color: #298aae;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1299px) {
+
+
+}
+
+@media only screen and (max-width: 995px) {
+	
+	nav {margin-top: 37px;}
+	nav > .sf-menu {padding-right: 0;}
+	
+	.sf-menu > li + li {margin-left: 5px;}
+
+	.sf-menu > li > a {letter-spacing: -.4px;}
+}
+
+@media only screen and (max-width: 767px) {
+
+  	header nav{
+  		border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;	
+	}	
+
+  	header nav ul {
+  		border: none;
+    }
+
+	.sf-menu{
+		display:none !important; 
+		float: none;
+	}
+
+	#mm0{
+		font: normal 12px/15px Arial, Helvetica, sans-serif;
+		background: #298aae;
+		color:#fff;
+		width:100%;
+		margin: 10px auto 20px;
+		float: none;
+        outline: none;
+		border:2px solid #298aae;
+	}
+
+}
+
+@media only screen and (max-width: 479px) {
+
+
+	.bottom_menu > li + li {
+    	margin-left: 8px;
+	}
+	
+	.bottom_menu > li a {font-size: 13px;}
+}
+

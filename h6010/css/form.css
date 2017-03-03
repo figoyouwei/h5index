@@ -1,0 +1,250 @@
+/****Form****/
+
+#form {
+	padding-top: 7px;
+	margin: 0 0 17px;
+	position: relative;
+	overflow: hidden;
+}
+
+#form input {
+	width: 100%;
+	height: 39px;
+	float:left;
+	background: #ffffff;
+	color: #8b8b8b;
+    font: 400 14px/26px 'Lato', sans-serif;
+    border: 1px solid #b8b8b8;
+    padding: 3px 12px;
+
+    box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+
+#form textarea {
+	width: 100%;
+	height: 453px;
+	background: #ffffff;
+	position: relative;
+	resize:none;
+	overflow: hidden;
+	float:left;
+	color: #8b8b8b;
+	margin: 0;
+    font: 400 14px/26px 'Lato', sans-serif;
+    padding: 6px 12px;
+    border: 1px solid #b8b8b8;
+
+    box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+
+#form ._placeholder {
+	color: #8b8b8b;
+    font: 400 14px/26px 'Lato', sans-serif;
+	border: none;
+    padding: 6px 12px;
+	height: 39px !important;
+	width: 100% !important;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	cursor: text !important;
+	display: block;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+#form ._placeholder.hidden {
+	display: none;
+}
+
+#form ._placeholder.focused {
+	opacity: 0.3;
+}
+
+#form .message ._placeholder {
+	height: 100% !important;
+}
+
+#form label {
+	position:relative;
+	display: block;
+	min-height: 39px;
+	float: left;
+	width: 100%;
+	text-align: left;
+	margin: 0 0 21px!important;
+}
+
+#form label.message {
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 21px!important;
+}
+
+#form .error-message, 
+#form .empty-message {
+	color: #fd4403;
+	font-size: 13px;
+    line-height: 39px;
+	width:auto;
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	opacity: 0;
+	right: 12px;
+	float:left;
+
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+#form .invalid .error-message, 
+#form .empty .empty-message {
+	opacity: 1;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+}
+
+.phone {position: relative;}
+
+.message br {
+	height: 0;
+	line-height: 0;
+}
+
+#form .success-message {
+	display: none;
+	opacity: 0;
+	position: absolute;
+    border: 1px solid #b8b8b8;
+	background: #ffffff;
+	color: #8b8b8b;
+	width: 100%;
+	height: 159px;
+	line-height: 159px;
+	text-align: center;
+	z-index: 999;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+#form.success .success-message {
+	display: block;
+	opacity: 1;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+}
+
+.success_wrapper {position: relative;}
+
+.address1 { 
+	position: relative;
+	overflow: hidden; 
+	margin: 24px 0 0;
+	padding: 0;
+	text-align: left;
+	float: left;
+	width: 100%;
+	z-index: 1;
+}
+
+.address1 span { 
+	float: left; 
+	font-weight: 400;
+}
+.address1 p { 
+	color: #444444; 
+	font: 400 14px/21px 'Lato', sans-serif;
+	margin-bottom: 21px;
+}
+
+.address1 dl dd {  
+	text-align: right;
+	width: 182px; 
+	color: #8b8b8b;
+	font: 400 14px/21px 'Lato', sans-serif;
+}
+
+.address1 a { 
+	display: inline-block; 
+	color: #c53832;
+	font: 400 12px/21px 'Lato', sans-serif;
+	text-transform: uppercase;
+}
+
+.address1 a:hover { 
+	text-decoration: none;
+	color: #444; 
+}
+
+.map_c {
+	width: 100%;
+	height: 438px;
+	margin: 7px 0 29px;
+}
+
+.btn {
+	float: right;
+	margin-top: 3px;
+	width: 175px;
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 995px) {
+
+	.map_c {height: 400px;}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.map figure {
+		width: 100% !important;
+		display: block !important;
+		margin-right: 0px !important;
+	}
+
+	.map_c {height: 300px;}
+ 
+ 	#form {margin: 0;padding: 0;}
+    #form textarea { height: 200px !important; }
+
+
+
+    .address1 {margin: 23px 0;}
+
+  
+}
+
+@media only screen and (max-width: 479px) {
+
+	.address1 {width: 100%;}
+
+    #form textarea { height: 165px !important; }
+
+    .map_c {height: 260px;}
+
+}
+

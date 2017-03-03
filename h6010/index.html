@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>H5建站云-模板6010</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css">     
+     <link rel="stylesheet" href="css/owl.carousel.css" > 
+     <link rel="stylesheet" href="css/touch_styles.css" /> 
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-1.10.2.js"></script>
+     <script src="js/jquery-ui.js"></script>     
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/script.js"></script>
+     <script src="js/search.js"></script>        
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/owl.carousel.js"></script>      
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>    
+     <script src="js/jquery.fancybox-1.3.4.js"></script>
+     <script src="js/touchTouch.jquery.js"></script> 
+     <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <link href='css/css' rel='stylesheet' type='text/css'>
+        <link href='css/css' rel='stylesheet' type='text/css'>
+        <link href='css/css' rel='stylesheet' type='text/css'>
+        <link href='css/css' rel='stylesheet' type='text/css'>
+        <div style=" clear: both; text-align:center; position: relative;">
+            <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="images/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+            </a>
+        </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                $("#owl").owlCarousel({
+                    items : 9,
+                    itemsDesktop : [1299, 9],
+                    itemsTablet: [995, 7],
+                    itemsTabletSmall: [767, 4],
+                    itemsMobile : [479, 3],
+                    lazyLoad : true,
+                    pagination: false,
+                    navigation : false
+                });
+                $("#owl-1").owlCarousel({
+                    items : 4,
+                    itemsDesktop : [1299, 4],
+                    itemsTablet: [995, 3],
+                    itemsTabletSmall: [767, 1],
+                    itemsMobile : [479, 1],
+                    lazyLoad : true,
+                    pagination: true,
+                    navigation : false
+                });
+                 $("#owl-2").owlCarousel({
+                    items : 4,
+                    itemsDesktop : [1299, 4],
+                    itemsTablet: [995, 4],
+                    itemsTabletSmall: [767, 1],
+                    itemsMobile : [479, 1],
+                    lazyLoad : true,
+                    pagination: false,
+                    navigation : true
+                });
+                /*fancybox*/             
+                $("a.various").fancybox();
+                /*gallery*/
+                $('.magnifier').touchTouch();
+                /*accordion*/
+                $(function() {
+                var icons = {
+                    header: "fa fa-plus-square",
+                    activeHeader: "fa fa-minus-square"
+                };
+                $( "#accordion" ).accordion({
+                    icons: icons,
+                    header: "> div > h5"
+                });
+                    $( "#toggle" ).button().click(function() {
+                        if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+                    $( "#accordion" ).accordion( "option", "icons", null );
+                    } else {
+                    $( "#accordion" ).accordion( "option", "icons", icons );
+                    }
+                });
+            });
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+     <style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+<body id="top" oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onbeforecopy="return false" onmouseup="document.selection.empty()" oncopy="document.selection.empty()" onselect="document.selection.empty()">
+
+<!--==============================header=================================-->
+
+<header id="header">
+    <div class="top_bg">
+        <div class="container">
+            <div class="row">
+                <div class="grid_5">
+                    <p class="welcome">您正在访问H5建站云官方网站</p>
+                </div>
+                <div class="grid_7">
+                    <div class="tel">建站咨询:
+                        <div class="phone"><i class="fa fa-phone"></i>+86-21-61010488</div>
+                        <span>&nbsp;</span>
+                        <a href="#"><i class="fa fa-envelope-o"></i>service@h5site.cn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_bg">
+        <div class="container">
+            <div class="row">
+                <div class="grid_3">
+                    <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+                </div>
+                <div class="grid_6">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li class="current"><a href="index.html">首页</a></li>
+                            <li><a href="index-1.html">公司动态</a>
+                                <ul>
+                                    <li><a href="#">Vestibulum iaculis</a></li>
+                                    <li><a href="#">Fusce euismod conuat</a>
+                                        <ul>
+                                            <li><a href="#">Pellentesque sed</a></li>
+                                            <li><a href="#">Aliquam congue ferm</a></li>
+                                            <li><a href="#">Mauris accum</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pellentesque</a></li>
+                               </ul>
+                            </li>
+                            <li><a href="index-2.html">核心服务</a></li>
+                            <li><a href="index-3.html">案例展示</a></li>
+                            <li><a href="index-4.html">联系我们</a></li>
+                            <li><a href="index-5.html">关于我们</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>           
+        </div>
+    </div>
+</header>
+
+<!-- content -->
+<div id="content">
+    <div class="banner">
+        <div class="container">
+            <div class="row">     
+                <div class="grid_12">
+                    <div class="caption">
+                        <p>很多创业者或者做企业的人，上来就把自己放在一个很高的高度，张嘴就谈什么文化啊民族啊，说自己不是为了赚钱而创业。其实大家别把钱看得太轻，如果没有钱你创什么业，创业不为了赚钱你干什么？创业者要实事求是，摆正创业的目的和钱的位置。创业不是为了赚钱，而是创业的结果让创业者得到了很多钱。钱是资源，赚钱的目的不是为了自己的生活更好，是为了帮助更多的客户，服务别人，帮助别人。</p>
+                        <span>阿里巴巴创始人，马云</span>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg1 p65">
+        <div class="container">
+            <div class="row">     
+                <div class="grid_12">
+                    <div class="intro">
+                        <img src="images/logotype.png" alt="">
+                        <h3>欢迎登顶H5建站云</h3>
+                        <h4><br>腾讯云官方建站服务合作伙伴</h4>
+                        <div>
+                            <a href="#!" class="link blue">开始建站<i class="fa fa-arrow-right"></i></a>
+                            <a href="#!" class="link red">代理咨询<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner1">
+        <div class="p91">
+            <div class="container">
+                <div class="row">     
+                    <div class="grid_4">
+                        <div class="thumb">
+                            <img src="images/page1_img1.png" alt=""> 
+                            <h5><a href="#" class="link1">永远领先一步</a></h5>
+                            <p>
+                            与传统的网站制作流程相比，我们的自助建站云系统可以让使用者根据市场的变化随时更新内容信息，摆脱对建站公司技术和人员的依赖。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="thumb">
+                            <img src="images/page1_img2.png" alt=""> 
+                            <h5><a href="#" class="link1">激情拥抱蜕变</a></h5>
+                            <p>
+                            我们的云平台提供海量国际顶尖设计师的前端理念，让您网站的每一次变化高雅而不失端庄，惊喜而不失熟悉的味道，用最低廉的成本实现最惊艳的蜕变。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="thumb">
+                            <img src="images/page1_img3.png" alt=""> 
+                            <h5><a href="#" class="link1">趋势个人电商</a></h5>
+                            <p>
+                            个人电商时代是正在进行时，我们的建站云系统提供当下最潮流的个人电商平台，让您摆脱对平台电商恶性排名的依赖，在互联网的海洋里打造全新的商业品牌。
+                            </p>
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg1 p86">
+        <div class="container">
+            <div class="row">     
+                <div class="grid_12">
+                    <div class="intro">
+                        <h3>上海陆家嘴高逼格团队的用心经营</h3>
+                        <h4><br>一套采用国际最前沿网站开发技术的高颜值自助建站云服务系统</h4>
+                    </div>                
+                    <div id="owl-1" class="owl-carousel">
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img4.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img5.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img6.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img7.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img4.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img5.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img6.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img7.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img4.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img5.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img6.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img7.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img4.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img5.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img6.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb1">
+                                <img src="images/page1_img7.jpg" alt="">
+                                <div><a href="#">Epsum factorial</a>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p></div>
+                            </div>
+                        </div>                                                                                                              
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="banner2">
+    <div class="p91">
+        <div class="container">
+            <div class="row">    
+               <div class="grid_6">
+                    <div class="grid_3 alpha">
+                        <div class="box">
+                             <div>
+                                 <span><i class="fa fa-group"></i></span>
+                                 <a href="#">Epsum factorial non</a>
+                             </div>
+                             <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian qua et gorilla congolium sic ad nauseum ouvlaki ignitus.</p>
+                        </div>
+                        <div class="box">
+                             <div>
+                                 <span><i class="fa fa-fire"></i></span>
+                                 <a href="#">Epsum factorial non</a>
+                             </div>
+                             <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian qua et gorilla congolium sic ad nauseum ouvlaki ignitus.</p>
+                        </div>                        
+                    </div>
+                    <div class="grid_3 omega">
+                        <div class="box">
+                             <div>
+                                 <span><i class="fa fa-gears"></i></span>
+                                 <a href="#">Epsum factorial non</a>
+                             </div>
+                             <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian qua et gorilla congolium sic ad nauseum ouvlaki ignitus.</p>
+                        </div>
+                        <div class="box">
+                             <div>
+                                 <span><i class="fa fa-bullhorn"></i></span>
+                                 <a href="#">Epsum factorial non</a>
+                             </div>
+                             <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian qua et gorilla congolium sic ad nauseum ouvlaki ignitus.</p>
+                        </div>                        
+                    </div>                                          
+                </div>
+                <div class="grid_6 thumbs">
+                    <a href="#"><img src="images/video.jpg" alt=""></a>                  
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg1 p50">
+    <div class="container">
+        <div class="row">     
+            <div class="grid_12">
+                <h2>公司动态</h2>
+            </div>
+        </div>
+        <div class="row">     
+            <div id="owl-2" class="owl-carousel">
+                <div class="grid_3">
+                    <div class="item">
+                        <div class="block">
+                            <a href="images/big1.jpg" class="magnifier">
+                            <img src="images/page1_img8.jpg" alt=""></a>
+                            <div class="capture1">
+                                <a href="#" class="link3">quid pro quo hic escorol Olypian puarrels et gorilla</a>
+                                <div class="time"><time datetime="2014-05-15">15 may 2014</time> / <a href="#">6 comments</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div class="item">
+                        <div class="block">
+                            <a href="images/big2.jpg" class="magnifier">
+                            <img src="images/page1_img9.jpg" alt=""></a>
+                            <div class="capture1">
+                                <a href="#" class="link3">quid pro quo hic escorol Olypian puarrels et gorilla</a>
+                                <div class="time"><time datetime="2014-05-15">15 may 2014</time> / <a href="#">6 comments</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div class="item">
+                        <div class="block">
+                            <a href="images/big3.jpg" class="magnifier">
+                            <img src="images/page1_img10.jpg" alt=""></a>
+                            <div class="capture1">
+                                <a href="#" class="link3">quid pro quo hic escorol Olypian puarrels et gorilla</a>
+                                <div class="time"><time datetime="2014-05-15">15 may 2014</time> / <a href="#">6 comments</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div class="item">
+                        <div class="block">
+                            <a href="images/big4.jpg" class="magnifier">
+                            <img src="images/page1_img11.jpg" alt=""></a>
+                            <div class="capture1">
+                                <a href="#" class="link3">quid pro quo hic escorol Olypian puarrels et gorilla</a>
+                                <div class="time"><time datetime="2014-05-15">15 may 2014</time> / <a href="#">6 comments</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="grid_3">
+                    <div class="item">
+                        <div class="block">
+                            <a href="images/big1.jpg" class="magnifier">
+                            <img src="images/page1_img8.jpg" alt=""></a>
+                            <div class="capture1">
+                                <a href="#" class="link3">quid pro quo hic escorol Olypian puarrels et gorilla</a>
+                                <div class="time"><time datetime="2014-05-15">15 may 2014</time> / <a href="#">6 comments</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="bg1 p86">
+    <div class="container">
+        <div class="row">
+            <div class="grid_4">
+                <h2>云建站优势</h2>
+                    <div id="accordion">
+                        <div class="group">
+                            <i></i>
+                            <h5><a href="#">quid pro quo hic escorol </a></h5>
+                            <p>Epsum factorial non t quid pro quo hic escorol. Olypian quarrels et gorilngolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unuacto lingo est igpay atinlay. Marquee selectus non provisio incongruous.</p>
+                        </div>
+                        <div class="group">
+                            <i></i>
+                            <h5><a href="#">escorol Olypian puarrels et</a></h5>
+                            <p>Epsum factorial non t quid pro quo hic escorol. Olypian quarrels et gorilngolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unuacto lingo est igpay atinlay. Marquee selectus non provisio incongruous.</p>
+                        </div>
+                        <div class="group">
+                            <i></i>
+                            <h5><a href="#">Souvlaki ignitus carborundum</a></h5>
+                            <p>Epsum factorial non t quid pro quo hic escorol. Olypian quarrels et gorilngolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unuacto lingo est igpay atinlay. Marquee selectus non provisio incongruous.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="grid_4">
+                <h2>核心服务</h2>
+                <p class="lh21">Gratuitous octopus niacodiumtimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glolava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee ctus non prio incongruous feline nolo contendre Olypian rels et gongolium sic ad nauseum. Souvlaki ignitus carborundum.</p>
+                <ul class="list">
+                    <li><a href="#"><i class="fa fa-check"></i>Physical Evidence - General</a></li>
+                    <li><a href="#"><i class="fa fa-check"></i>Electro-Magnetic Effects</a></li>
+                    <li><a href="#"><i class="fa fa-check"></i>Vehicle Interference Cases</a></li>
+                    <li><a href="#"><i class="fa fa-check"></i>Physical Trace Cases</a></li>
+                </ul>
+            </div>
+            <div class="grid_4">
+                <h2>品质保证</h2>
+                    <blockquote>
+                        <div class="bq_top">
+                            <img src="images/quote.png" alt="">
+                            <p>Gratuitous octopus niacodiumtimate. Quote meon an estimate et nointerruptus stadium. Sic tempus fugit esperanto hicp estrogen. Glolava ex librus hup hey ad condominiacile et geranium incognito. Epsum factorial non.</p>
+                        </div>
+                        <div class="bq_bot">
+                            <img src="images/page1_img12.png" alt=""> 
+                            <a href="#!">Andy Taylor</a><br>
+                            <span>Project Manager</span>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="divider"></div> -->
+<!--
+<div class="bg1">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <div id="owl" class="owl-carousel">
+                    <div class="item"><a href="#"><img src="images/page1_ico1.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico2.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico3.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico4.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico5.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico6.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico7.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico8.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico9.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico1.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="images/page1_ico2.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<!--==================footer=======================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+            	<div class="border"></div>
+            </div>
+            <div class="grid_6">
+                <ul class="bottom_menu">
+                    <li><a href="#">上海腾逊科技有限公司</a></li>
+                    <li>|</li>
+                    <li><a href="http://www.h5site.cn/">云服务商: H5建站云</a></li>
+                </ul>
+            </div>
+            <div class="grid_6">
+                <ul class="social-links">
+                </ul> 
+                <!--{%FOOTER_LINK} -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    jQuery(".bg1.p65").find("h4").css("color","orange");
+    jQuery(".bg1.p86").find("h3").css("color","orange");
+    jQuery(".banner1").find("h5 a").css("color","orange");
+</script>
+</body>
+</html>
