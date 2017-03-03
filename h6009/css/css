@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Niconne';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../images/1Y2V-wun2k3RwNuuIBcx0Q.eot);
+  src: local('Niconne'), local('Niconne-Regular'), url(../images/1Y2V-wun2k3RwNuuIBcx0Q.eot) format('embedded-opentype'), url(../images/Pt5YCk9yiMzehxqMoOcZoQ.woff) format('woff');
+}
+
