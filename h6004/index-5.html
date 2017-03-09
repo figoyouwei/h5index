@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Contacts</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/form.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/script.js"></script> 
+     <script src="js/TMForm.js"></script>
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/wow.js"></script>
+	 <script>
+	    $(document).ready(function () {       
+	        new WOW().init();
+	    });
+	 </script>
+     <script>
+       $(document).ready(function(){  
+        $().UItoTop({ easingType: 'easeOutQuart' });
+       });
+     </script>
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+    <![endif]-->
+     <style type="text/css">body,h1,h2,h3,h4,h5,h6,h7,h8,span,p,a,div,ul,li,form,input,label{ font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}</style></head>
+     
+     <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onbeforecopy="return false" onmouseup="document.selection.empty()" oncopy="document.selection.empty()" onselect="document.selection.empty()">
+     <div class="main_color">
+     
+<!--==============================header=================================--> 
+<header>  
+      <div class="container_12">
+      <div class="grid_12">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.png" alt="Your Happy Family">
+          </a>
+        </h1>
+        <div class="menu_block ">
+          <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+            <ul class="sf-menu">
+                 <li><a href="index.html">HOME</a>
+                   <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">History</a></li>
+                      <li><a href="#">News</a>
+                        <ul>
+                          <li><a href="#">Fresh</a></li>
+                          <li><a href="#">Archive</a></li>
+                         
+                        </ul>
+                      </li>
+                   </ul>
+                 </li>
+                 <li><a href="index-1.html">ABOUT</a></li>
+                 <li><a href="index-2.html">SERVICES</a></li>
+                 <li><a href="index-3.html">PROJECTS</a></li>
+                 <li><a href="index-4.html">BLOG</a></li>
+                 <li class="current"><a href="index-5.html">CONTACTS</a></li>
+               </ul>
+            </nav>
+           <div class="clear"></div>
+        </div>
+      </div>
+   </div>
+</header>
+<!--==============================Content=================================-->
+<div class="content">
+  <div class="container_12">
+    <div class="grid_12 wow fadeInLeft">
+      <h2>How to Find Us</h2>
+            <div class="map">
+            	<figure class="img_inner fleft">
+                 	<iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="100%" src="../../../plugin/map/bmap.jsp?x=121.328877&y=31.244825"></iframe>
+               	</figure>
+              <p>Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. </p>
+             <address class="mb0">
+                <dl>
+                    <dt>
+                        8901 Marmora Road, <br>Glasgow, D04 89GR.
+                    </dt>
+                    <dd><span>Freephone:</span>+1 800 559 6580</dd>
+                    <dd><span>Telephone:</span>+1 800 603 6035</dd>
+                    <dd><span>FAX:</span>+1 800 889 9898</dd>
+                    <dd>E-mail: <a href="#" class="link-1">mail@demolink.org</a></dd>
+                </dl>
+             </address>
+          </div>
+      <div class="clear"></div>    
+      <h2 class="head1">Feedback</h2>
+            <form id="form">
+                            
+                      <div class="success_wrapper">
+                      <div class="success-message">Contact form submitted</div>
+                      </div>
+                      <label class="name">
+                      <input type="text" placeholder="Name" data-constraints="@Required @JustLetters" />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid name.</span>
+                      </label>
+                    
+                      <label class="email">
+                      <input type="text" placeholder="E-mail" data-constraints="@Required @Email" />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid email.</span>
+                      </label>
+                      <label class="message">
+                      <textarea placeholder="Message" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*The message is too short.</span>
+                      </label>
+                      <div>
+                      <div class="clear"></div>
+                      <div class="btns">
+                      <a href="#" data-type="submit" class="btn">send message</a></div>
+                      </div>
+                      </form>   
+    </div>
+  </div>
+</div>
+<!--==============================footer=================================-->
+</div> 
+<footer>   
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="copy">
+        Reveal (c) <span id="copyright-year"></span> | <a href="index-6.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>  
+</footer>
+  
+</body>
+</html>
+
